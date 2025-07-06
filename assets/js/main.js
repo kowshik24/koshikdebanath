@@ -145,22 +145,6 @@
     });
   }
 
-  // Initialize PureCounter for the new counter elements
-  new PureCounter({
-    selector: ".counter-number",
-    start: 0,
-    end: 0,
-    duration: 2,
-    delay: 10,
-    once: true,
-    pulse: false,
-    decimals: 0,
-    legacy: true,
-    filesizing: false,
-    currency: false,
-    separator: false
-  });
-
   const portfolioLightbox = GLightbox({
     selector: ".portfolio-lightbox",
   });
