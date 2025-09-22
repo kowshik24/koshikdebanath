@@ -25,6 +25,28 @@
     el.addEventListener("scroll", listener);
   };
 
+  // BibTeX Copy Functionality
+  window.copyBibTeX = function(bibId) {
+    const bibElement = document.getElementById(bibId);
+    if (bibElement) {
+      const bibText = bibElement.textContent.trim();
+      navigator.clipboard.writeText(bibText).then(function() {
+        // Show success message
+        const button = event.target.closest('button');
+        const originalText = button.innerHTML;
+        button.innerHTML = '<i class="bi bi-check me-1"></i> Copied!';
+        button.classList.remove('btn-outline-dark');
+        button.classList.add('btn-success');
+        
+        setTimeout(function() {
+          button.innerHTML = originalText;
+          button.classList.remove('btn-success');
+          button.classList.add('btn-outline-dark');
+        }, 2000);
+      });
+    }
+  };
+
   let navbarlinks = select("#navbar .scrollto", true);
   const navbarlinksActive = () => {
     let position = window.scrollY + 200;

@@ -1,0 +1,60 @@
+name: Update Last Modified Date (Alternative)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.MY_CUSTOM_TOKEN }}
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Update last modified date with Node.js
+      run: |
+        cat > update-date.js << 'EOF'
+        const fs = require('fs');
+        
+        // Get current date
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const currentDate = now.toLocaleDateString('en-US', options);
+        
+        // Read the HTML file
+        let html = fs.readFileSync('index.html', 'utf8');
+        
+        // Update the last modified date
+        const regex = /<small>Last updated: [^<]*<\/small>/g;
+        html = html.replace(regex, `<small>Last updated: ${currentDate}</small>`);
+        
+        // Write back to file
+        fs.writeFileSync('index.html', html);
+        
+        console.log(`Updated last modified date to: ${currentDate}`);
+        EOF
+        
+        node update-date.js
+        
+        # Check if there are changes
+        if git diff --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Configure git
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Commit and push changes
+        git add index.html
+        git commit -m "Auto-update last modified date"
+        git push

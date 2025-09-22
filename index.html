@@ -24,7 +24,7 @@
   <body>
     <!-- Header -->
     <header id="header" class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#home">Koshik Debanath</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,9 +36,9 @@
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
                         <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#research-analytics">Analytics</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#educational-tools">Educational Tools</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -50,32 +50,49 @@
     <section id="home" class="hero-section d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold text-primary mb-4">Koshik Debanath</h1>
-                    <h2 class="h3 text-secondary mb-4">Software Engineer, Data Scientist & Machine Learning Researcher</h2>
-                    <p class="lead mb-4">A highly motivated researcher with extensive experience in Natural Language Processing, Generative AI, and Deep Learning, evidenced by multiple peer-reviewed publications. Seeking to pursue a PhD to develop novel multi-modal models and explore their applications in complex reasoning and misinformation detection.</p>
-                    <div class="d-flex gap-3 mb-4">
-                        <a href="#publications" class="btn btn-primary btn-lg">View Publications</a>
-                        <a href="#research" class="btn btn-outline-primary btn-lg">Research Areas</a>
-                        <a href="assets/img/Koshik_Debanath_CV.pdf" class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener">CV</a>
-                    </div>
-                    <div class="d-flex gap-3">
-                        <a href="https://github.com/kowshik24" class="text-decoration-none" target="_blank">
-                            <i class="bi bi-github fs-4 text-dark"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/kowshik24" class="text-decoration-none" target="_blank">
-                            <i class="bi bi-linkedin fs-4 text-primary"></i>
-                        </a>
-                        <a href="mailto:koshik.debanath@gmail.com" class="text-decoration-none">
-                            <i class="bi bi-envelope fs-4 text-success"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=U6CRjb8AAAAJ&hl=en" class="text-decoration-none" target="_blank">
-                            <i class="bi bi-google fs-4 text-warning"></i>
-                        </a>
+                <div class="col-lg-8">
+                    <div class="academic-header">
+                        <h1 class="researcher-name">Koshik Debanath</h1>
+                        <p class="institution">Machine Learning & AI Research | Computer Vision | NLP</p>
+                        <div class="affiliation mb-4">
+                            <p class="text-muted mb-2">
+                                <i class="bi bi-geo-alt-fill me-2"></i>Rajshahi University of Engineering & Technology
+                            </p>
+                            <p class="text-muted">
+                                <i class="bi bi-envelope-fill me-2"></i>koshik.debanath@gmail.com
+                            </p>
+                        </div>
+                        <div class="research-interests mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2" style="color: #2c3e50; font-size: 0.9rem; letter-spacing: 1px;">Research Interests</h6>
+                            <p class="lead" style="font-size: 1.1rem; line-height: 1.6;">
+                                Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, 
+                                Medical Image Analysis, Low-Resource Language Processing, Generative AI
+                            </p>
+                        </div>
+                        <div class="academic-links mb-4">
+                            <a href="#publications" class="btn btn-academic me-3">Publications</a>
+                            <a href="assets/img/Koshik_Debanath_CV.pdf" class="btn btn-outline-academic" target="_blank" rel="noopener">Download CV</a>
+                        </div>
+                        <div class="academic-social d-flex gap-3">
+                            <a href="https://scholar.google.com/citations?user=U6CRjb8AAAAJ&hl=en" class="academic-link" target="_blank" title="Google Scholar">
+                                <i class="bi bi-google"></i> Google Scholar
+                            </a>
+                            <a href="https://github.com/kowshik24" class="academic-link" target="_blank" title="GitHub">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            <a href="https://linkedin.com/in/kowshik24" class="academic-link" target="_blank" title="LinkedIn">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            <a href="mailto:koshik.debanath@gmail.com" class="academic-link" title="Email">
+                                <i class="bi bi-envelope"></i> Email
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <img src="assets/img/koshik-debanath.png" alt="Koshik Debanath" class="img-fluid rounded-circle shadow" style="max-width: 300px;">
+                <div class="col-lg-4 text-center">
+                    <div class="researcher-photo">
+                        <img src="assets/img/koshik-debanath.png" alt="Koshik Debanath" class="img-fluid academic-headshot">
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,55 +102,80 @@
     <section id="about" class="py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title mb-5">About Me</h2>
-                    <div class="row g-4">
+                <div class="col-lg-10 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title mb-3">About</h2>
+                        <p class="lead text-muted">Research background and academic profile</p>
+                    </div>
+                    
+                    <div class="row g-4 mb-5">
                         <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="about-card h-100">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-mortarboard-fill text-primary fs-1 mb-3"></i>
+                                    <i class="bi bi-mortarboard-fill fs-1 mb-3" style="color: var(--academic-accent);"></i>
                                     <h5 class="card-title">Education</h5>
-                                    <p class="card-text">B.Sc. in Computer Science and Engineering<br>
-                                    <strong>Rajshahi University of Engineering & Technology</strong><br>
-                                    CGPA: 3.27/4.00 (2018-2023)</p>
+                                    <div class="academic-degree">
+                                        <p class="mb-2"><strong>B.Sc. in Computer Science and Engineering</strong></p>
+                                        <p class="text-muted mb-2">Rajshahi University of Engineering & Technology</p>
+                                        <p class="text-muted mb-0">CGPA: 3.27/4.00 (2018-2023)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="about-card h-100">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-gear-fill text-primary fs-1 mb-3"></i>
-                                    <h5 class="card-title">Expertise</h5>
-                                    <p class="card-text">Machine Learning, Computer Vision, NLP<br>
-                                    Deep Learning, Medical Imaging Analysis<br>
-                                    Low-Resource Language Processing</p>
+                                    <i class="bi bi-lightbulb-fill fs-1 mb-3" style="color: var(--academic-accent);"></i>
+                                    <h5 class="card-title">Research Focus</h5>
+                                    <div class="research-areas">
+                                        <p class="mb-1">• Machine Learning & Deep Learning</p>
+                                        <p class="mb-1">• Computer Vision & Medical Imaging</p>
+                                        <p class="mb-1">• Natural Language Processing</p>
+                                        <p class="mb-0">• Low-Resource Language Processing</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Skills Section -->
-                    <div class="mt-5">
-                        <h3 class="mb-4">Technical Skills</h3>
+                    <!-- Academic Bio -->
+                    <div class="academic-bio mb-5">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h5 class="mb-3" style="color: var(--academic-primary);">Background</h5>
+                                <p class="mb-0">
+                                    I am a software engineer and researcher with expertise in machine learning, computer vision, 
+                                    and natural language processing. My work focuses on developing practical solutions for 
+                                    real-world problems, with experience in medical imaging analysis, low-resource language 
+                                    processing, and deep learning applications. I have contributed to multiple peer-reviewed 
+                                    publications and open-source projects in the field of artificial intelligence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Technical Expertise -->
+                    <div class="technical-expertise">
+                        <h4 class="mb-4 text-center" style="color: var(--academic-primary);">Technical Expertise</h4>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <div class="skill-category">
-                                    <h6 class="text-primary">Languages</h6>
-                                    <p>Python (Expert), C/C++, Java, JavaScript, SQL, MATLAB</p>
+                                <div class="expertise-category">
+                                    <h6 class="expertise-title">Programming Languages</h6>
+                                    <p class="expertise-content">Python (Expert), C/C++, Java, JavaScript, SQL, MATLAB</p>
                                 </div>
-                                <div class="skill-category">
-                                    <h6 class="text-primary">AI/ML Frameworks</h6>
-                                    <p>PyTorch, TensorFlow, Keras, Scikit-learn, LangChain, Transformers, OpenCV</p>
+                                <div class="expertise-category">
+                                    <h6 class="expertise-title">Machine Learning Frameworks</h6>
+                                    <p class="expertise-content">PyTorch, TensorFlow, Keras, Scikit-learn, LangChain, Transformers, OpenCV</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="skill-category">
-                                    <h6 class="text-primary">AI/ML Expertise</h6>
-                                    <p>Generative AI (LLMs, RAG, Fine-tuning), NLP, Computer Vision, Deep Learning, Time Series Analysis, Prompt Engineering, Explainable AI (XAI), Data Mining</p>
+                                <div class="expertise-category">
+                                    <h6 class="expertise-title">Research Areas</h6>
+                                    <p class="expertise-content">Generative AI (LLMs, RAG, Fine-tuning), NLP, Computer Vision, Deep Learning, Bayesian Methods, Scientific ML, Explainable AI</p>
                                 </div>
-                                <div class="skill-category">
-                                    <h6 class="text-primary">Tools & Platforms</h6>
-                                    <p>Git, Docker, FastAPI, Flask, Django, CI/CD, MLOps, Pinecone, MongoDB, MySQL, SQLite</p>
+                                <div class="expertise-category">
+                                    <h6 class="expertise-title">Tools & Platforms</h6>
+                                    <p class="expertise-content">Git, Docker, FastAPI, Flask, Django, MLOps, Pinecone, MongoDB, MySQL</p>
                                 </div>
                             </div>
                         </div>
@@ -146,11 +188,23 @@
     <!-- Publications Section -->
     <section id="publications" class="py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Research Publications</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title mb-3">Publications</h2>
+                        <p class="lead text-muted">Peer-reviewed research in machine learning, computer vision, and natural language processing</p>
+                    </div>
+            
             
             <!-- Journal Articles -->
-            <div class="mb-5">
-                <h3 class="text-center mb-4">Journal Articles</h3>
+            <div class="publication-category mb-5">
+                <div class="category-header mb-4">
+                    <h3 class="category-title">
+                        <i class="bi bi-journal-text text-primary me-2"></i>
+                        Journal Articles
+                    </h3>
+                    <hr class="category-divider">
+                </div>
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="card border-0 shadow-sm mb-4">
@@ -178,52 +232,103 @@
             </div>
 
             <!-- Conference Papers -->
-            <div class="mb-5">
-                <h3 class="text-center mb-4">Conference Papers</h3>
+            <div class="publication-category mb-5">
+                <div class="category-header mb-4">
+                    <h3 class="category-title">
+                        <i class="bi bi-people text-primary me-2"></i>
+                        Conference Publications
+                    </h3>
+                    <hr class="category-divider">
+                </div>
                 <div class="row g-4">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-12">
                         <!-- Publication 1 -->
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 academic-publication">
                             <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge bg-primary">IEEE ICCIT 2023</span>
-                                    <small class="text-muted">2023</small>
-                                </div>
-                                <h5 class="card-title fw-bold">An Attention-Based Deep Learning Approach to Knee Injury Classification from MRI Images</h5>
-                                <!-- Add the Authors-->
-                                <p class="card-text text-muted mb-3">Authors: <strong>K. Debanath</strong>, A. F. M. M. Rahman, and M. A. Hossain</p>
-                                <!--
-                                I want to use like that:
-                                K. Debanath, A. F. M. M. Rahman and M. A. Hossain, "An Attention-Based Deep Learning Approach to Knee Injury Classification from MRI Images," 2023 26th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, 2023, pp. 1-6, doi: 10.1109/ICCIT60459.2023.10441340. keywords: {Deep learning;Accuracy;Attention mechanisms;Magnetic resonance imaging;Computational modeling;Computer architecture;Feature extraction;Convolutional neural networks;Injuries;Testing;Knee Injuries;MRI Knee Images;Deep Learning Algorithms;Attention Mechanism;Convolutional Neural Networks(CNNs);Binary Classification;Multi-class classification;Data augmentation;Radiologists},
-
-
-                                -->
-                                <!-- <p class="card-text text-muted mb-3">K. Debanath, A. F. M. M. Rahman and M. A. Hossain, "An Attention-Based Deep Learning Approach to Knee Injury Classification from MRI Images," 2023 26th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, 2023, pp. 1-6, doi: 10.1109/ICCIT60459.2023.10441340.</p> -->
-                                <!-- Abstract of the paper-->
-                                <p class="card-text text-muted mb-3"> Abstract—Knee injuries, prevalent in athletic and aging popu- lations, pose significant challenges to healthcare professionals due to their complex nature and the critical function of the knee joint. Early and accurate diagnosis is paramount to ensure effective treatment and minimize long-term complications. Traditional diagnostic methods, including physical examinations and imaging techniques like MRI, require expert interpretation and can sometimes be inconclusive. This study introduces an approach to knee injury classification using deep learning techniques by leveraging convolutional neural networks (CNNs) with Attention Mechanism. This research work integrates powerful feature extraction capabilities of CNN and feature refinement of attention mechanism for the binary and multi-class classification of knee MRI images, with the aim of accurately identifying specific knee injury types. Based on our experiment on two comprehensive knee MRI datasets, our custom CNN model achieved 88% testing accuracy on Dataset-1 (Binary classification) and 77% accuracy on Dataset-2 (Multi-class classification). Meanwhile, the Attention-based CNN model achieved 100% accuracy on Dataset- 1 (Binary Classification) and 91% accuracy on Dataset-2 (Multi- Class Classification). This approach not only holds promise for enhancing diagnostic accuracy but also for reducing the time to diagnosis.</p>
-                                
-                                <div class="d-flex gap-2 mb-3">
-                                    <span class="badge bg-light text-dark">Computer Vision</span>
-                                    <span class="badge bg-light text-dark">Medical Imaging</span>
-                                    <span class="badge bg-light text-dark">Deep Learning</span>
-                                    <span class="badge bg-light text-dark">Attention Mechanism</span>
-                                    <span class="badge bg-light text-dark">Convolutional Neural Networks(CNN)</span>
-                                    <!-- <span class="badge bg-light text-dark">Deep Learning Algorithms</span> -->
-                                </div>
-                                <div class="publication-links mb-3">
-                                    <a href="https://ieeexplore.ieee.org/document/10441340" class="btn btn-sm btn-outline-primary me-2" target="_blank">IEEE Xplore</a>
-                                    <a href="https://doi.org/10.1109/ICCIT60459.2023.10441340" class="btn btn-sm btn-outline-secondary" target="_blank">DOI</a>
-                                </div>
-                                <!-- Research Visualization -->
-                                <div class="research-visualization">
-                                    <h6 class="text-primary mb-3">Research Visualization</h6>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <!-- <canvas id="kneeInjuryChart" width="400" height="300"></canvas> -->
-                                            <!--Here I want to add image of my paper-->
-                                            <img src="assets/img/attention_mechanism_architechture.jpg" alt="Knee Injury Architechture" class="img-fluid rounded shadow">
-                                            <img src="assets/img/model_comparison_6_models.jpg" alt="Model Comparison" class="img-fluid rounded shadow">
-
+                                <div class="row">
+                                    <!-- Left side - Image -->
+                                    <div class="col-md-3 text-center mb-3 mb-md-0">
+                                        <img src="assets/img/attention_mechanism_architechture.jpg" alt="Knee Injury Architecture" class="img-fluid rounded shadow publication-image">
+                                        <img src="assets/img/model_comparison_6_models.jpg" alt="Model Comparison" class="img-fluid rounded shadow publication-image">
+                                        <div class="image-caption mt-2">
+                                            <small class="text-muted">Architecture Diagram</small>
+                                        </div>
+                                    </div>
+                                    <!-- Right side - Details -->
+                                    <div class="col-md-9">
+                                        <div class="publication-header mb-3">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <span class="badge bg-primary publication-venue">IEEE ICCIT 2023</span>
+                                                <div class="publication-year">
+                                                    <small class="text-muted">Published: December 2023</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h5 class="publication-title fw-bold text-dark mb-3">
+                                            An Attention-Based Deep Learning Approach to Knee Injury Classification from MRI Images
+                                        </h5>
+                                        
+                                        <div class="authors mb-3">
+                                            <p class="text-muted mb-0">
+                                                <strong class="text-primary">K. Debanath</strong>, A.F.M.M. Rahman, and M.A. Hossain
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="publication-venue-full mb-3">
+                                            <p class="text-muted fst-italic mb-0">
+                                                <i class="bi bi-building me-1"></i>
+                                                <strong>2023 26th International Conference on Computer and Information Technology (ICCIT)</strong>, Cox's Bazar, Bangladesh, pp. 1-6
+                                            </p>
+                                        </div>
+                                        
+                                        <div class="abstract-section mb-3">
+                                            <button class="btn btn-sm btn-outline-secondary abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-conf-1">
+                                                <i class="bi bi-chevron-down me-1"></i>View Abstract
+                                            </button>
+                                            <div class="collapse mt-2" id="abstract-conf-1">
+                                                <div class="abstract-content p-3 bg-light rounded">
+                                                    <p class="text-muted small mb-0">
+                                                        <strong>Abstract:</strong> Knee injuries, prevalent in athletic and aging populations, pose significant challenges to healthcare professionals due to their complex nature and the critical function of the knee joint. Early and accurate diagnosis is paramount to ensure effective treatment and minimize long-term complications. Traditional diagnostic methods, including physical examinations and imaging techniques like MRI, require expert interpretation and can sometimes be inconclusive. This study introduces an approach to knee injury classification using deep learning techniques by leveraging convolutional neural networks (CNNs) with Attention Mechanism. This research work integrates powerful feature extraction capabilities of CNN and feature refinement of attention mechanism for the binary and multi-class classification of knee MRI images, with the aim of accurately identifying specific knee injury types. Based on our experiment on two comprehensive knee MRI datasets, our custom CNN model achieved 88% testing accuracy on Dataset-1 (Binary classification) and 77% accuracy on Dataset-2 (Multi-class classification). Meanwhile, the Attention-based CNN model achieved 100% accuracy on Dataset-1 (Binary Classification) and 91% accuracy on Dataset-2 (Multi-Class Classification). This approach not only holds promise for enhancing diagnostic accuracy but also for reducing the time to diagnosis.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="keywords mb-3">
+                                            <div class="keyword-tags">
+                                                <span class="badge bg-light text-dark me-1 mb-1">Computer Vision</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">Medical Imaging</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">Deep Learning</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">Attention Mechanism</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">CNN</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="publication-links">
+                                            <a href="https://ieeexplore.ieee.org/document/10441340" class="btn btn-sm btn-primary me-2" target="_blank">
+                                                <i class="bi bi-file-text me-1"></i>IEEE Xplore
+                                            </a>
+                                            <a href="https://doi.org/10.1109/ICCIT60459.2023.10441340" class="btn btn-sm btn-outline-secondary me-2" target="_blank">
+                                                <i class="bi bi-link-45deg me-1"></i>DOI
+                                            </a>
+                                            <button class="btn btn-sm btn-outline-info" onclick="copyBibTeX('conf1')">
+                                                <i class="bi bi-clipboard me-1"></i>BibTeX
+                                            </button>
+                                        </div>
+                                        
+                                        <!-- Hidden BibTeX -->
+                                        <div id="conf1-bibtex" style="display: none;">
+@inproceedings{debanath2023attention,
+  title={An Attention-Based Deep Learning Approach to Knee Injury Classification from MRI Images},
+  author={Debanath, K. and Rahman, A.F.M.M. and Hossain, M.A.},
+  booktitle={2023 26th International Conference on Computer and Information Technology (ICCIT)},
+  pages={1--6},
+  year={2023},
+  organization={IEEE},
+  address={Cox's Bazar, Bangladesh},
+  doi={10.1109/ICCIT60459.2023.10441340}
+}
                                         </div>
                                     </div>
                                 </div>
@@ -231,36 +336,89 @@
                         </div>
 
                         <!-- Publication 2 -->
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 publication-card">
                             <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge bg-success">ECCE 2025</span>
-                                    <small class="text-muted">2025</small>
+                                <div class="row">
+                                    <!-- Left side - Image -->
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <img src="assets/img/bangla-llama.jpg" alt="Bangla-LLama Architecture" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                        <img src="assets/img/Transformer.jpg" alt="Transformer Architecture" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                        
+                                    </div>
+                                    <!-- Right side - Details -->
+                                    <div class="col-md-8">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <span class="badge bg-success">ECCE 2025</span>
+                                            <small class="text-muted">2025</small>
+                                        </div>
+                                        <h5 class="card-title fw-bold">Advancing Low-Resource NLP: Contextual Question Answering for Bengali Language Using Llama</h5>
+                                        <p class="card-text text-muted mb-3">Authors: <strong>K. Debanath</strong>, S. Aich, and A.Y Srizon</p>
+                                        <p class="card-text text-muted mb-3">Abstract—Natural language processing (NLP) has witnessed significant advancements in recent years, particularly in improving question-answering (QA) systems for well-resourced languages such as English. However, the development of such systems for low-resource languages, including Bengali, remains insufficiently explored. This study proposes an approach to developing a Bengali QA system utilizing the Llama-3.2-3B-Instruct model, leveraging transfer learning techniques on a synthetic dataset derived from the SQuAD 2.0 benchmark...</p>
+                                        
+                                        <div class="d-flex flex-wrap gap-1 mb-3">
+                                            <span class="badge bg-light text-dark">NLP</span>
+                                            <span class="badge bg-light text-dark">Bengali Language</span>
+                                            <span class="badge bg-light text-dark">Question Answering</span>
+                                            <span class="badge bg-light text-dark">Large Language Models</span>
+                                            <span class="badge bg-light text-dark">Llama Model</span>
+                                            <span class="badge bg-light text-dark">Fine-tuning</span>
+                                        </div>
+                                        
+                        <!-- Video Presentation Section -->
+                        <div class="video-presentation mb-3">
+                            <h6 class="text-primary mb-2">
+                                <i class="bi bi-play-circle me-2"></i>Conference Presentation
+                            </h6>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="ratio ratio-16x9 mb-2">
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/RHG5fHBCDlI" 
+                                            title="ECCE 2025 - Advancing Low-Resource NLP: Contextual Question Answering for Bengali Language Using Llama"
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen
+                                            class="rounded shadow-sm">
+                                        </iframe>
+                                    </div>
                                 </div>
-                                <h5 class="card-title fw-bold">Advancing Low-Resource NLP: Contextual Question Answering for Bengali Language Using Llama</h5>
-                                <p class="card-text text-muted mb-3">Authors: <strong>K. Debanath</strong>, S. Aich, and A.Y Srizon</p>
-                                
-                                <!-- <p class="card-text text-muted mb-3">A comprehensive study on adapting large language models for Bengali language processing, addressing the challenges of low-resource language understanding and generation.</p> -->
-                                <p class="card-tex text-muted mb-3">Abstract—Natural language processing (NLP) has witnessed significant advancements in recent years, particularly in improving question-answering (QA) sys- tems for well-resourced languages such as English. However, the development of such systems for low- resource languages, including Bengali, remains insuf- ficiently explored. This study proposes an approach to developing a Bengali QA system utilizing the Llama- 3.2-3B-Instruct model, leveraging transfer learning techniques on a synthetic dataset derived from the SQuAD 2.0 benchmark. The experiments achieved an F1 score of 42.77%, marking a 4.02% improvement over the previous best performance of multilingual BERT (mBERT) variants. These results establish a benchmark against human responses and underscore the potential of transfer learning in advancing QA capa- bilities for Bengali and similar low-resource languages.</p>
-                                <div class="d-flex gap-2 mb-3">
-                                    <span class="badge bg-light text-dark">NLP</span>
-                                    <span class="badge bg-light text-dark">Bengali Language</span>
-                                    <span class="badge bg-light text-dark">Question Answering</span>
-                                    <span class="badge bg-light text-dark">Large Language Models</span>
-                                    <span class="badge bg-light text-dark">Llama Model</span>
-                                    <span class="badge bg-light text-dark">Fine-tuning</span>
+                                <div class="col-lg-4">
+                                    <div class="presentation-slides text-center">
+                                        <div class="slides-preview mb-2">
+                                            <i class="bi bi-file-earmark-slides text-primary" style="font-size: 3rem;"></i>
+                                        </div>
+                                        <h6 class="mb-2">Presentation Slides</h6>
+                                        <a href="assets/img/727_ Koshik Debanath.pptx" 
+                                           class="btn btn-sm btn-outline-info" 
+                                           download="ECCE2025_Bengali_NLP_Slides_Koshik_Debanath.pptx">
+                                            <i class="bi bi-download me-1"></i>Download PPTX
+                                        </a>
+                                        <p class="text-muted mt-2 mb-0" style="font-size: 0.8rem;">
+                                            Conference presentation slides
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="publication-links mb-3">
-                                    <a href="https://ieeexplore.ieee.org/document/11013841" class="btn btn-sm btn-outline-primary me-2" target="_blank">IEEE Xplore</a>
-                                    <a href="https://doi.org/10.1109/ECCE64574.2025.11013841" class="btn btn-sm btn-outline-secondary" target="_blank">DOI</a>
-                                </div>
-                                <!-- Research Visualization -->
-                                <div class="research-visualization">
-                                    <h6 class="text-primary mb-3">Research Visualization</h6>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <!-- <canvas id="bengaliNLPChart" width="400" height="300"></canvas> -->
-                                            <img src="assets/img/bangla-llama.jpg" alt="Bangla-LLama Architechture" class="img-fluid rounded shadow">
+                            </div>
+                            <div class="presentation-info mt-2">
+                                <p class="text-muted mb-0" style="font-size: 0.85rem;">
+                                    <i class="bi bi-calendar3 me-1"></i>Presented at ECCE 2025 Conference
+                                    <span class="mx-2">•</span>
+                                    <i class="bi bi-geo-alt me-1"></i>Video & Slides Available
+                                </p>
+                            </div>
+                        </div>                                        <div class="publication-links">
+                                            <a href="https://ieeexplore.ieee.org/document/11013841" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">
+                                                <i class="bi bi-file-earmark-pdf me-1"></i>IEEE Xplore
+                                            </a>
+                                            <a href="https://doi.org/10.1109/ECCE64574.2025.11013841" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank">
+                                                <i class="bi bi-link-45deg me-1"></i>DOI
+                                            </a>
+                                            <a href="https://youtu.be/RHG5fHBCDlI" class="btn btn-sm btn-outline-danger me-2 mb-2" target="_blank">
+                                                <i class="bi bi-youtube me-1"></i>Video Presentation
+                                            </a>
+                                            <a href="assets/img/727_ Koshik Debanath.pptx" class="btn btn-sm btn-outline-info me-2 mb-2" download="ECCE2025_Bengali_NLP_Slides_Koshik_Debanath.pptx">
+                                                <i class="bi bi-file-earmark-slides me-1"></i>Slides (PPTX)
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -268,34 +426,69 @@
                         </div>
 
                         <!-- Publication 3 -->
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 publication-card">
                             <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge bg-success">ECCE 2025</span>
-                                    <small class="text-muted">2025</small>
-                                </div>
-                                <h5 class="card-title fw-bold">Distinguishing Between Formal and Colloquial: A Multilingual BERT Approach to Bengali Language Classification</h5>
-                                <p class="card-text text-muted mb-3">Authors: S. Aich, <strong>K. Debanath</strong>, and A.Y Srizon</p>
-                                <p class="card-text text-muted mb-3">Abstract—The Bengali language, rich in history and cultural significance, poses unique challenges in Natu- ral Language Processing (NLP) due to its dual-register structure: Sadhu (formal) and Cholit (colloquial). These registers differ significantly in syntax, vocabu- lary, and usage, complicating tasks such as text classi- fication, translation, and sentiment analysis. Language models not specifically trained to recognize these dis- tinctions often misinterpret these variations, limiting the accuracy of Bengali NLP tools. To address this, a dataset from Mendeley was used to fine-tune the multilingual BERT (mBERT) model for distinguishing between Sadhu and Cholit registers. The fine-tuned model achieved an accuracy of 94.08%, effectively capturing the subtle lexical and syntactic differences between the two forms. This work advances Bengali NLP, enabling more precise applications in digital communication, automated translation, and linguistic analysis, while contributing to broader advancements in low-resource language processing.</p>
-                                <div class="d-flex gap-2 mb-3">
-                                    <span class="badge bg-light text-dark">Multilingual BERT</span>
-                                    <span class="badge bg-light text-dark">Text Classification</span>
-                                    <span class="badge bg-light text-dark">Bengali NLP</span>
-                                    <span class="badge bg-light text-dark">Fine-tuning</span>
-                                    <span class="badge bg-light text-dark">Sadhu and Cholit</span>
-                                    
-                                </div>
-                                <div class="publication-links mb-3">
-                                    <a href="https://ieeexplore.ieee.org/document/11013999" class="btn btn-sm btn-outline-primary me-2" target="_blank">IEEE Xplore</a>
-                                    <a href="https://doi.org/10.1109/ECCE64574.2025.11013999" class="btn btn-sm btn-outline-secondary" target="_blank">DOI</a>
-                                </div>
-                                <!-- Research Visualization -->
-                                <div class="research-visualization">
-                                    <h6 class="text-primary mb-3">Research Visualization</h6>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <!-- <canvas id="bengaliClassificationChart" width="400" height="300"></canvas> -->
-                                            <img src="assets/img/Bengali_word_cloud.png" alt="Bengali Word Cloud" class="img-fluid rounded shadow">
+                                <div class="row">
+                                    <!-- Left side - Image -->
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <img src="assets/img/Bengali_word_cloud.png" alt="Bengali Word Cloud" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                        <img src="assets/img/Formal-Collocial-CM.png" alt="Confusion Matrix" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                    </div>
+                                    <!-- Right side - Details -->
+                                    <div class="col-md-8">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <span class="badge bg-success">ECCE 2025</span>
+                                            <small class="text-muted">2025</small>
+                                        </div>
+                                        <h5 class="card-title fw-bold">Distinguishing Between Formal and Colloquial: A Multilingual BERT Approach to Bengali Language Classification</h5>
+                                        <p class="card-text text-muted mb-3">Authors: S. Aich, <strong>K. Debanath</strong>, and A.Y Srizon</p>
+                                        <p class="card-text text-muted mb-3">Abstract—The Bengali language, rich in history and cultural significance, poses unique challenges in Natural Language Processing (NLP) due to its dual-register structure: Sadhu (formal) and Cholit (colloquial). These registers differ significantly in syntax, vocabulary, and usage, complicating tasks such as text classification, translation, and sentiment analysis...</p>
+                                        
+                                        <div class="d-flex flex-wrap gap-1 mb-3">
+                                            <span class="badge bg-light text-dark">Multilingual BERT</span>
+                                            <span class="badge bg-light text-dark">Text Classification</span>
+                                            <span class="badge bg-light text-dark">Bengali NLP</span>
+                                            <span class="badge bg-light text-dark">Fine-tuning</span>
+                                            <span class="badge bg-light text-dark">Sadhu and Cholit</span>
+                                        </div>
+                                        
+                                        <!-- Conference Presentation Slides -->
+                                        <div class="conference-slides mb-3">
+                                            <h6 class="text-primary mb-2">
+                                                <i class="bi bi-file-earmark-slides me-2"></i>Conference Presentation
+                                            </h6>
+                                            <div class="slides-download-section p-3" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--academic-accent);">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-2 text-center mb-2 mb-md-0">
+                                                        <i class="bi bi-file-earmark-slides text-primary" style="font-size: 2.5rem;"></i>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <h6 class="mb-1">ECCE 2025 Presentation Slides</h6>
+                                                        <p class="text-muted mb-0" style="font-size: 0.9rem;">
+                                                            Multilingual BERT approach for Bengali language classification
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-3 text-center">
+                                                        <a href="assets/img/729_Sagor Aich.pptx" 
+                                                           class="btn btn-sm btn-outline-info" 
+                                                           download="ECCE2025_Bengali_BERT_Classification_Slides.pptx">
+                                                            <i class="bi bi-download me-1"></i>Download PPTX
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="publication-links">
+                                            <a href="https://ieeexplore.ieee.org/document/11013999" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">
+                                                <i class="bi bi-file-earmark-pdf me-1"></i>IEEE Xplore
+                                            </a>
+                                            <a href="https://doi.org/10.1109/ECCE64574.2025.11013999" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank">
+                                                <i class="bi bi-link-45deg me-1"></i>DOI
+                                            </a>
+                                            <a href="assets/img/729_Sagor Aich.pptx" class="btn btn-sm btn-outline-info me-2 mb-2" download="ECCE2025_Bengali_BERT_Classification_Slides.pptx">
+                                                <i class="bi bi-file-earmark-slides me-1"></i>Slides (PPTX)
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -304,33 +497,67 @@
 
 
                         <!-- Publication 4 -->
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 publication-card">
                             <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge bg-success">NCIM-2025</span>
-                                    <small class="text-muted">2025</small>
-                                </div>
-                                <h5 class="card-title fw-bold">Analyzing Bot Activity and Political Discourse in the 2024 U.S. Presidential Election: A Machine Learning Approach to Misinformation and Manipulation</h5>
-                                <p class="card-text text-muted mb-3">Authors: <strong>K. Debanath</strong>, S. Aich, and A.Y Srizon</p>
-                                <p class="card-text text-muted mb-3">Abstract—Social media has become a battleground for political discourse, with automated accounts (bots) playing a growing role in shaping public opinion and engagement. In the context of the 2024 U.S. Presidential Election, understanding bot activity is crucial for identifying potential misinformation and manipulation tactics. This study analyzes 50,191 tweets collected between May and July 2023 to assess bot prevalence and influence. Bot detection is conducted using Botometer API scores and a Random Forest Regressor (MSE: 0.0071, R2: 0.779), facilitating a multi- threshold analysis. Findings indicate a low overall bot presence (2.22% at a 0.7 threshold) but significant variations across political affiliations. While human-generated content dominates with a 15:1 engagement ratio, bots are most effective in cross- party discussions (engagement ratio: 0.145), whereas Democratic- focused bots exhibit the lowest engagement success. To deepen insights into election-related influence operations, a novel party- affiliation analysis framework is introduced, shedding light on platform-specific manipulation strategies and their implications for political discourse.</p>
-                                <div class="d-flex gap-2 mb-3">
-                                    <span class="badge bg-light text-dark">Social Media Analysis</span>
-                                    <span class="badge bg-light text-dark">2024 U.S. Presidential Election</span>
-                                    <span class="badge bg-light text-dark">Machine Learning</span>
-                                    <span class="badge bg-light text-dark">Political Discourse</span>
-                                </div>
-                                <div class="publication-links mb-3">
-                                    <!-- <a href="https://ieeexplore.ieee.org/document/11013999" class="btn btn-sm btn-outline-primary me-2" target="_blank">IEEE Xplore</a> -->
-                                    <!-- <a href="https://doi.org/10.1109/ECCE64574.2025.11013999" class="btn btn-sm btn-outline-secondary" target="_blank">DOI</a> -->
-                                </div>
-                                <!-- Research Visualization -->
-                                <div class="research-visualization">
-                                    <h6 class="text-primary mb-3">Research Visualization</h6>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <!-- <canvas id="bengaliClassificationChart" width="400" height="300"></canvas> -->
-                                            <img src="assets/img/party_engagement.png" alt="Distribution of mean engagements per post by political affiliation and account type. Boxplots show median values and interquartile ranges." class="img-fluid rounded shadow">
-                                            <img src="assets/img/actual_vs_predicted values with density.png" alt="Calibration plot comparing predicted probabilities (x- axis) with observed bot prevalence (y-axis). Heatmap intensity reflects data density." class="img-fluid rounded shadow">
+                                <div class="row">
+                                    <!-- Left side - Image -->
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <img src="assets/img/party_engagement.png" alt="Bot Activity Analysis" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                    </div>
+                                    <!-- Right side - Details -->
+                                    <div class="col-md-8">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <span class="badge bg-success">NCIM-2025</span>
+                                            <small class="text-muted">2025</small>
+                                        </div>
+                                        <h5 class="card-title fw-bold">Analyzing Bot Activity and Political Discourse in the 2024 U.S. Presidential Election: A Machine Learning Approach to Misinformation and Manipulation</h5>
+                                        <p class="card-text text-muted mb-3">Authors: <strong>K. Debanath</strong>, S. Aich, and A.Y Srizon</p>
+                                        <p class="card-text text-muted mb-3">Abstract—Social media has become a battleground for political discourse, with automated accounts (bots) playing a growing role in shaping public opinion and engagement. In the context of the 2024 U.S. Presidential Election, understanding bot activity is crucial for identifying potential misinformation and manipulation tactics...</p>
+                                        
+                                        <div class="d-flex flex-wrap gap-1 mb-3">
+                                            <span class="badge bg-light text-dark">Social Media Analysis</span>
+                                            <span class="badge bg-light text-dark">2024 U.S. Presidential Election</span>
+                                            <span class="badge bg-light text-dark">Machine Learning</span>
+                                            <span class="badge bg-light text-dark">Political Discourse</span>
+                                        </div>
+                                        
+                                        <!-- Conference Presentation Slides -->
+                                        <div class="conference-slides mb-3">
+                                            <h6 class="text-primary mb-2">
+                                                <i class="bi bi-file-earmark-slides me-2"></i>Conference Presentation
+                                            </h6>
+                                            <div class="slides-download-section p-3" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--academic-accent);">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-2 text-center mb-2 mb-md-0">
+                                                        <i class="bi bi-file-earmark-slides text-primary" style="font-size: 2.5rem;"></i>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <h6 class="mb-1">NCIM 2025 Presentation Slides</h6>
+                                                        <p class="text-muted mb-0" style="font-size: 0.9rem;">
+                                                            Bot activity analysis in 2024 U.S. Presidential Election
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-3 text-center">
+                                                        <a href="assets/img/543_KoshikDebanath.pptx" 
+                                                           class="btn btn-sm btn-outline-info" 
+                                                           download="NCIM2025_Bot_Activity_Analysis_Slides.pptx">
+                                                            <i class="bi bi-download me-1"></i>Download PPTX
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="publication-links">
+                                            <a href="https://ieeexplore.ieee.org/document/11160229" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">
+                                                <i class="bi bi-file-earmark-pdf me-1"></i>IEEE Xplore
+                                            </a>
+                                            <a href="https://doi.org/10.1109/NCIM65934.2025.11160229" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank">
+                                                <i class="bi bi-link-45deg me-1"></i>DOI
+                                            </a>
+                                            <a href="assets/img/543_KoshikDebanath.pptx" class="btn btn-sm btn-outline-info me-2 mb-2" download="NCIM2025_Bot_Activity_Analysis_Slides.pptx">
+                                                <i class="bi bi-file-earmark-slides me-1"></i>Slides (PPTX)
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -357,18 +584,54 @@
                                     <span class="badge bg-light text-dark">Semantic Text Embeddings</span>
 
                                 </div>
+                                
+                                <!-- Conference Presentation Slides -->
+                                <div class="conference-slides mb-3">
+                                    <h6 class="text-primary mb-2">
+                                        <i class="bi bi-file-earmark-slides me-2"></i>Conference Presentation
+                                    </h6>
+                                    <div class="slides-download-section p-3" style="background: #f8f9fa; border-radius: 8px; border-left: 4px solid var(--academic-accent);">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-2 text-center mb-2 mb-md-0">
+                                                <i class="bi bi-file-earmark-slides text-primary" style="font-size: 2.5rem;"></i>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <h6 class="mb-1">NCIM 2025 Presentation Slides</h6>
+                                                <p class="text-muted mb-0" style="font-size: 0.9rem;">
+                                                    Explainable AI for Human vs AI text classification
+                                                </p>
+                                            </div>
+                                            <div class="col-md-3 text-center">
+                                                <a href="assets/img/545.pptx" 
+                                                   class="btn btn-sm btn-outline-info" 
+                                                   download="NCIM2025_Human_AI_Text_Classification_Slides.pptx">
+                                                    <i class="bi bi-download me-1"></i>Download PPTX
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                 <div class="publication-links mb-3">
-                                    <!-- <a href="https://ieeexplore.ieee.org/document/11013999" class="btn btn-sm btn-outline-primary me-2" target="_blank">IEEE Xplore</a> -->
-                                    <!-- <a href="https://doi.org/10.1109/ECCE64574.2025.11013999" class="btn btn-sm btn-outline-secondary" target="_blank">DOI</a> -->
+                                    <a href="https://ieeexplore.ieee.org/document/11160309" class="btn btn-sm btn-outline-primary me-2" target="_blank">
+                                        <i class="bi bi-file-earmark-pdf me-1"></i>IEEE Xplore
+                                    </a>
+                                    <a href="https://doi.org/10.1109/NCIM65934.2025.11160309" class="btn btn-sm btn-outline-secondary me-2" target="_blank">
+                                        <i class="bi bi-link-45deg me-1"></i>DOI
+                                    </a>
+                                    <a href="assets/img/545.pptx" class="btn btn-sm btn-outline-info me-2" download="NCIM2025_Human_AI_Text_Classification_Slides.pptx">
+                                        <i class="bi bi-file-earmark-slides me-1"></i>Slides (PPTX)
+                                    </a>
                                 </div>
                                 <!-- Research Visualization -->
                                 <div class="research-visualization">
                                     <h6 class="text-primary mb-3">Research Visualization</h6>
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <!-- <canvas id="bengaliClassificationChart" width="400" height="300"></canvas> -->
-                                            <img src="assets/img/sample_18244_explanation-cropped.jpg" alt="LIME Output Illustrating the Explanation of a Human-Generated Text." class="img-fluid rounded shadow">
-                                            <img src="assets/img/sample_31856_explanation-cropped.jpg" alt="LIME Output Illustrating the Explanation of a AI-Generated Text." class="img-fluid rounded shadow">
+                                    <div class="row g-3">
+                                        <div class="col-12 col-md-6 text-center">
+                                            <img src="assets/img/sample_18244_explanation-cropped.jpg" alt="LIME Output Illustrating the Explanation of a Human-Generated Text." class="img-fluid rounded shadow mb-3">
+                                        </div>
+                                        <div class="col-12 col-md-6 text-center">
+                                            <img src="assets/img/sample_31856_explanation-cropped.jpg" alt="LIME Output Illustrating the Explanation of a AI-Generated Text." class="img-fluid rounded shadow mb-3">
                                         </div>
                                     </div>
                                 </div>
@@ -376,18 +639,21 @@
                         </div>
 
                         <!-- Additional Publications -->
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 academic-publication">
                             <div class="card-body">
-                                <h6 class="text-primary mb-3">Additional Accepted Papers</h6>
+                                <h6 class="text-primary mb-3">
+                                    <i class="bi bi-plus-circle me-2"></i>
+                                    Additional Accepted Papers
+                                </h6>
                                 <ul class="list-unstyled">
-                                    <!-- <li class="mb-2">• <strong>K. Debanath</strong>, S. Aich and A. Y. Srizon, "Analyzing Bot Activity and Political Discourse in the 2024 U.S. Presidential Election: A Machine Learning Approach to Misinformation and Manipulation," <strong>Accepted</strong>, <a href="https://www.confncim.org/" target="_blank">NCIM-2025</a></li> -->
-                                    <!-- <li class="mb-2">• S. Aich, <strong>K. Debanath</strong>, and A. Y. Srizon, "Distinguishing Human-Written and AI-Generated Text: A Comprehensive Study Using Explainable Artificial Intelligence in Text Classification," <strong>Accepted</strong>, <a href="https://www.confncim.org/" target="_blank">NCIM-2025</a></li> -->
-                                    <li class="mb-2">• <strong>K. Debanath</strong>, "Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics," <strong>Accepted</strong>, <a href="https://confbim.com/" target="_blank">BIM 2025</a></li>
+                                    <li class="mb-2">• <strong>K. Debanath</strong>, "Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics," <strong>Accepted</strong>, <a href="https://confbim.com/" target="_blank" class="text-primary">BIM 2025</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            
             </div>
         </div>
     </section>
@@ -499,6 +765,7 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/binance.png" class="card-img-top" alt="AI Investment Committee" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">AI Investment Committee for Binance</h5>
                             <p class="card-text">Multi-agent AI system with specialized agents for cryptocurrency investment recommendations.</p>
@@ -512,6 +779,7 @@
                 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/stock.png" class="card-img-top" alt="Stock Price Forecasting" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Stock Price Forecasting</h5>
                             <p class="card-text">LSTM models for stock price prediction in Bangladeshi and global markets.</p>
@@ -525,6 +793,7 @@
                 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/ai-vs-human.png" class="card-img-top" alt="AI vs Human Text Detector" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">AI vs Human Text Detector</h5>
                             <p class="card-text">Interactive web application to classify human-written vs AI-generated text.</p>
@@ -537,6 +806,7 @@
                 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/data-science-pilot.png" class="card-img-top" alt="DataSciencePilot RAG System" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">DataSciencePilot (RAG System)</h5>
                             <p class="card-text">Chat-based interface for querying custom PDFs using Pinecone and LLaMA-2.</p>
@@ -549,6 +819,7 @@
                 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/cvanalyzerpro.png" class="card-img-top" alt="CVAnalyzerPro" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">CVAnalyzerPro</h5>
                             <p class="card-text">AI tool for automatically scoring candidate CVs against job requirements.</p>
@@ -561,12 +832,13 @@
                 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/uber-ride-prediction.png" class="card-img-top" alt="UberRidePrediction" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">UberRidePrediction</h5>
                             <p class="card-text">XGBoost model packaged as Python module for Uber fare prediction.</p>
                             <div class="project-links">
-                                <a href="https://pypi.org/project/UberRidePrediction/" class="btn btn-sm btn-outline-primary me-2" target="_blank">PyPI</a>
-                                <a href="https://uber-ride-price-prediction.onrender.com/" class="btn btn-sm btn-outline-secondary" target="_blank">Live App</a>
+                                <a href="https://pypi.org/project/UberRidePrediction/" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">PyPI</a>
+                                <a href="https://uber-ride-price-prediction.onrender.com/" class="btn btn-sm btn-outline-secondary mb-2" target="_blank">Live App</a>
                             </div>
                         </div>
                     </div>
@@ -574,6 +846,7 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/pineconeutils.png" class="card-img-top" alt="Pinecone Integration Suite" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Pinecone Integration Suite</h5>
                             <p class="card-text">Authored and published two Python libraries to simplify data handling for RAG systems.</p>
@@ -586,6 +859,7 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/captioncraft.png" class="card-img-top" alt="CaptionCraft" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">CaptionCraft</h5>
                             <p class="card-text">Web application to generate image captions using the Google Gemini Pro Vision API.</p>
@@ -598,6 +872,7 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/price.png" class="card-img-top" alt="Market Price Prediction" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Market Price Prediction</h5>
                             <p class="card-text">Implemented and compared multiple time-series models to predict product prices.</p>
@@ -610,6 +885,7 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/recommendatio.jpg" class="card-img-top" alt="Movie Recommendation" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Movie Recommendation</h5>
                             <p class="card-text">Implemented a KNN model using cosine similarity to recommend movies based on user input.</p>
@@ -622,6 +898,7 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/potato.jpeg" class="card-img-top" alt="Potato Disease Classification" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Potato Disease Classification</h5>
                             <p class="card-text">Built a CNN model achieving near-100% accuracy in classifying potato diseases from images.</p>
@@ -634,6 +911,7 @@
 
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 shadow-sm">
+                        <img src="assets/img/diabetes-background.jpg" class="card-img-top" alt="Diabetes Prediction" style="height: 200px; object-fit: cover;">
                         <div class="card-body">
                             <h5 class="card-title">Diabetes Prediction</h5>
                             <p class="card-text">Constructed an Artificial Neural Network with PyTorch to predict patient diabetes status.</p>
@@ -643,6 +921,110 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Tools Section -->
+    <section id="educational-tools" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Educational Tools & Interactive Demos</h2>
+            <p class="text-center lead mb-5 text-muted">Interactive visualizations and educational tools for understanding complex concepts</p>
+            
+            <div class="row g-4">
+                <!-- Interactive Convolution Visualizer -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm educational-card">
+                        <div class="educational-preview text-center p-3">
+                            <img src="assets/img/educational/convolution-visualization.gif" 
+                                 alt="Interactive Convolution Visualizer Animation" 
+                                 class="img-fluid rounded shadow-sm"
+                                 style="max-height: 200px; object-fit: cover; border: 2px solid #e9ecef;">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">
+                                <i class="bi bi-grid-3x3-gap me-2"></i>Interactive Convolution Visualizer
+                            </h5>
+                            
+                            <p class="card-text text-muted mb-3">
+                                An interactive web-based tool to visualize and understand convolution operations in deep learning and image processing.
+                            </p>
+                            
+                            <div class="features-list mb-3">
+                                <ul class="list-unstyled text-muted" style="font-size: 0.9rem;">
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Interactive convolution visualization</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Real-time parameter adjustment</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Animated processing steps</li>
+                                    <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>Educational tooltips</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="educational-tags mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">Deep Learning</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Visualization</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">JavaScript</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://kowshik24.github.io/convolution-visualizer/" class="btn btn-sm btn-primary me-2 mb-2" target="_blank">
+                                    <i class="bi bi-play-circle me-1"></i>Try Demo
+                                </a>
+                                <a href="https://github.com/kowshik24/convolution-visualizer" class="btn btn-sm btn-outline-primary mb-2" target="_blank">
+                                    <i class="bi bi-github me-1"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Attention Visualization Tool -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm educational-card">
+                        <div class="educational-preview text-center p-3">
+                            <img src="assets/img/educational/attention-visualization.gif" 
+                                 alt="Attention Visualization Between Sentences" 
+                                 class="img-fluid rounded shadow-sm"
+                                 style="max-height: 200px; object-fit: cover; border: 2px solid #e9ecef;">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">
+                                <i class="bi bi-eye me-2"></i>Attention Visualization Tool
+                            </h5>
+                            
+                            <p class="card-text text-muted mb-3">
+                                Interactive tool to visualize attention mechanisms between sentences using various attention types and vector similarity measures.
+                            </p>
+                            
+                            <div class="features-list mb-3">
+                                <ul class="list-unstyled text-muted" style="font-size: 0.9rem;">
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Sentence-level attention heatmaps</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Multiple attention types (Cosine, Dot Product)</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Interactive matrix exploration</li>
+                                    <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>Automated insights & analysis</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="educational-tags mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">Attention Mechanism</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">NLP</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Transformers</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">JavaScript</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://kowshik24.github.io/attention-visualization/" class="btn btn-sm btn-primary me-2 mb-2" target="_blank">
+                                    <i class="bi bi-play-circle me-1"></i>Try Demo
+                                </a>
+                                <a href="https://github.com/kowshik24/attention-visualization" class="btn btn-sm btn-outline-primary mb-2" target="_blank">
+                                    <i class="bi bi-github me-1"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Placeholder for additional educational tools -->
+                <!-- You can easily add more educational tools here in the same format -->
             </div>
         </div>
     </section>
@@ -789,7 +1171,8 @@
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
-            <p class="mb-0">&copy; 2025 Koshik Debanath. All rights reserved.</p>
+            <p class="mb-1">&copy; 2025 Koshik Debanath. All rights reserved.</p>
+            <p class="mb-0 text-muted"><small>Last updated: September 15, 2025</small></p>
     </div>
     </footer>
 
@@ -797,5 +1180,71 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+    
+    <!-- Academic Publications JavaScript -->
+    <script>
+        // BibTeX copy functionality
+        function copyBibTeX(publicationId) {
+            const bibtexElement = document.getElementById(publicationId + '-bibtex');
+            const bibtexText = bibtexElement.textContent.trim();
+            
+            navigator.clipboard.writeText(bibtexText).then(function() {
+                // Show success message
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="bi bi-check me-1"></i>Copied!';
+                button.classList.remove('btn-outline-info');
+                button.classList.add('btn-success');
+                
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.classList.remove('btn-success');
+                    button.classList.add('btn-outline-info');
+                }, 2000);
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = bibtexText;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="bi bi-check me-1"></i>Copied!';
+                button.classList.remove('btn-outline-info');
+                button.classList.add('btn-success');
+                
+                setTimeout(function() {
+                    button.innerHTML = originalText;
+                    button.classList.remove('btn-success');
+                    button.classList.add('btn-outline-info');
+                }, 2000);
+            });
+        }
+        
+        // Abstract toggle animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const abstractToggles = document.querySelectorAll('.abstract-toggle');
+            abstractToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    setTimeout(() => {
+                        if (icon.classList.contains('bi-chevron-down')) {
+                            icon.classList.remove('bi-chevron-down');
+                            icon.classList.add('bi-chevron-up');
+                            this.innerHTML = this.innerHTML.replace('View Abstract', 'Hide Abstract');
+                        } else {
+                            icon.classList.remove('bi-chevron-up');
+                            icon.classList.add('bi-chevron-down');
+                            this.innerHTML = this.innerHTML.replace('Hide Abstract', 'View Abstract');
+                        }
+                    }, 150);
+                });
+            });
+        });
+    </script>
   </body>
 </html>

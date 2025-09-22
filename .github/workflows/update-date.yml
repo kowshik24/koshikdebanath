@@ -1,0 +1,38 @@
+name: Update Last Modified Date
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.MY_CUSTOM_TOKEN }}
+
+    - name: Update last modified date
+      run: |
+        # Get current date in the desired format
+        CURRENT_DATE=$(date '+%B %d, %Y')
+        
+        # Update the date in index.html using a more specific pattern
+        sed -i "s|<small>Last updated: [^<]*</small>|<small>Last updated: $CURRENT_DATE</small>|g" index.html
+        
+        # Check if there are changes
+        if git diff --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Configure git
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Commit and push changes
+        git add index.html
+        git commit -m "Auto-update last modified date to $CURRENT_DATE"
+        git push

@@ -1,0 +1,68 @@
+name: Update Last Modified Date
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '.github/workflows/**'
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.MY_CUSTOM_TOKEN }}
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Update last modified date
+      run: |
+        python3 << 'EOF'
+        import re
+        from datetime import datetime
+        
+        # Get current date in format: "Month DD, YYYY"
+        current_date = datetime.now().strftime("%B %d, %Y")
+        
+        # Read the HTML file
+        with open('index.html', 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Update the last modified date using regex
+        pattern = r'<small>Last updated: [^<]*</small>'
+        replacement = f'<small>Last updated: {current_date}</small>'
+        updated_content = re.sub(pattern, replacement, content)
+        
+        # Write back to file
+        with open('index.html', 'w', encoding='utf-8') as file:
+            file.write(updated_content)
+        
+        print(f"Updated last modified date to: {current_date}")
+        EOF
+
+    - name: Check for changes and commit
+      run: |
+        # Check if there are changes
+        if git diff --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Configure git
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Get the updated date for commit message
+        UPDATED_DATE=$(python3 -c "from datetime import datetime; print(datetime.now().strftime('%B %d, %Y'))")
+        
+        # Commit and push changes
+        git add index.html
+        git commit -m "Auto-update: Last modified date to $UPDATED_DATE"
+        git push
