@@ -38,7 +38,7 @@
                         <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#educational-tools">Educational Tools</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#educational-tools">Tools & Demos </a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -1040,8 +1040,52 @@
         <div class="container">
             <h2 class="section-title text-center mb-5">Educational Tools & Interactive Demos</h2>
             <p class="text-center lead mb-5 text-muted">Interactive visualizations and educational tools for understanding complex concepts</p>
-            
+
             <div class="row g-4">
+                <!-- SynthDetect Ultra Forensic Tool -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm educational-card">
+                        <div class="educational-preview text-center p-3">
+                            <img src="assets/img/educational/synthdetect.gif" 
+                                 alt="SynthDetect Ultra Forensic Demo" 
+                                 class="img-fluid rounded shadow-sm"
+                                 style="max-height: 200px; object-fit: cover; border: 2px solid #e9ecef;">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">
+                                <i class="bi bi-shield-lock me-2"></i>SynthDetect Ultra: AI Image Forensics
+                            </h5>
+                            <p class="card-text text-muted mb-3">
+                                Advanced forensic tool to distinguish authentic photographs from AI-generated images (GANs, Diffusion). Uses explainable, physics-inspired and statistical features to detect synthetic "fingerprints" invisible to the naked eye.
+                            </p>
+                            <div class="features-list mb-3">
+                                <ul class="list-unstyled text-muted" style="font-size: 0.9rem;">
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Physics & Optics: Chromatic Aberration, CFA correlation</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Frequency Domain: Spectral Slope, High-Frequency Ratios</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Statistical: Benford’s Law, Noise Residual Kurtosis</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Pixel-Level: Error Level Analysis, Gradient Field anisotropy</li>
+                                    <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>Explainable radar charts & heatmaps</li>
+                                </ul>
+                            </div>
+                            <div class="educational-tags mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">Forensics</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Explainable AI</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Image Analysis</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Python</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://gradient-field-detector.streamlit.app/" class="btn btn-sm btn-primary me-2 mb-2" target="_blank">
+                                    <i class="bi bi-play-circle me-1"></i>Try Demo
+                                </a>
+                                <a href="https://youtu.be/zwNUQgbRae4?si=6hqK_SFfL7r1oNNG" class="btn btn-sm btn-danger mb-2" target="_blank">
+                                    <i class="bi bi-youtube me-1"></i>Watch Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Interactive Convolution Visualizer -->
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100 border-0 shadow-sm educational-card">
@@ -1126,6 +1170,52 @@
                                     <i class="bi bi-play-circle me-1"></i>Try Demo
                                 </a>
                                 <a href="https://github.com/kowshik24/attention-visualization" class="btn btn-sm btn-outline-primary mb-2" target="_blank">
+                                    <i class="bi bi-github me-1"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI Companion Plugin -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm educational-card">
+                        <div class="educational-preview text-center p-3">
+                            <img src="assets/img/educational/ai-companion-plugin-install.gif" 
+                                 alt="AI Companion Plugin Demo" 
+                                 class="img-fluid rounded shadow-sm"
+                                 style="max-height: 200px; object-fit: cover; border: 2px solid #e9ecef;">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-3">
+                                <i class="bi bi-robot me-2"></i>AI Companion Plugin
+                            </h5>
+                            
+                            <p class="card-text text-muted mb-3">
+                                An AI assistant plugin for Obsidian that allows you to ask questions, get responses, and include page content as context.
+                            </p>
+                            
+                            <div class="features-list mb-3">
+                                <ul class="list-unstyled text-muted" style="font-size: 0.9rem;">
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Quick access with `/ai` command</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Context-aware responses</li>
+                                    <li class="mb-1"><i class="bi bi-check-circle text-success me-2"></i>Insert into notes</li>
+                                    <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>OpenAI integration</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="educational-tags mb-3">
+                                <span class="badge bg-light text-dark me-1 mb-1">AI Assistant</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">Obsidian</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">OpenAI</span>
+                                <span class="badge bg-light text-dark me-1 mb-1">TypeScript</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="https://youtu.be/_sQmsy0-68w" class="btn btn-sm btn-danger me-2 mb-2" target="_blank">
+                                    <i class="bi bi-youtube me-1"></i>Watch Demo
+                                </a>
+                                <a href="https://github.com/kowshik24/obsidian-ai-companion" class="btn btn-sm btn-outline-primary mb-2" target="_blank">
                                     <i class="bi bi-github me-1"></i>Source Code
                                 </a>
                             </div>
@@ -1295,7 +1385,7 @@
     <footer class="py-4 bg-dark text-white text-center">
         <div class="container">
             <p class="mb-1">&copy; 2025 Koshik Debanath. All rights reserved.</p>
-            <p class="mb-0 text-muted"><small>Last updated: September 28, 2025</small></p>
+            <p class="mb-0 text-muted"><small>Last updated: December 28, 2025</small></p>
     </div>
     </footer>
 
