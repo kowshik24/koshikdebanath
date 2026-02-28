@@ -227,6 +227,28 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="badge bg-warning">Under Review</span>
+                                    <small class="text-muted">2026</small>
+                                </div>
+                                <h5 class="card-title fw-bold">Optimizing Semantic Retrieval for Bengali: A Comparative Analysis of Monolingual and Multilingual Embeddings with Matryoshka Representation Learning</h5>
+                                <p class="card-text text-muted mb-2">Authors: <strong>K. Debanath</strong> and A.Y. Srizon</p>
+                                <p class="card-text text-muted mb-3"><strong>Submitted to:</strong> Transactions on Asian and Low-Resource Language Information Processing (TALLIP)</p>
+                                <p class="card-text text-muted mb-3">Abstract—Effective semantic retrieval remains the primary bottleneck for Bengali Retrieval-Augmented Generation (RAG) systems. While general-purpose multilingual models exist, they often lack the semantic alignment required for high-precision tasks. This paper presents a comparative study of three embedding architectures—monolingual (shihab17), distilled multilingual (distiluse), and paraphrase-focused (mpnet)—to identify the strongest retrieval foundation for Bengali. The models are fine-tuned on the BanglaRQA dataset with a composite objective combining Multiple Negatives Ranking Loss and Matryoshka Representation Learning (MRL). Results show that architectural choice is decisive: the fine-tuned mpnet model achieves an NDCG@10 of 0.8114 and statistically outperforms the monolingual baseline (p &lt; 0.001). Beyond retrieval quality, efficiency analysis for low-resource deployment shows that MRL-trained MPNet preserves 96% of retrieval effectiveness at 128 dimensions, reducing storage cost by 83% without meaningful accuracy loss.</p>
+                                <p class="card-text text-muted mb-3"><strong>CCS Concepts:</strong> Computing methodologies → Natural language processing; Neural networks. Information systems → Retrieval models and ranking.</p>
+                                <div class="d-flex flex-wrap gap-2 mb-1">
+                                    <span class="badge bg-light text-dark">Bengali NLP</span>
+                                    <span class="badge bg-light text-dark">Semantic Retrieval</span>
+                                    <span class="badge bg-light text-dark">Monolingual vs Multilingual Embeddings</span>
+                                    <span class="badge bg-light text-dark">Matryoshka Representation Learning</span>
+                                    <span class="badge bg-light text-dark">Sentence Embeddings</span>
+                                    <span class="badge bg-light text-dark">RAG</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -638,12 +660,12 @@
                             </div>
                         </div>
 
-                        <!-- Additional Publications -->
+                        <!-- Additional Conference Paper -->
                         <div class="card border-0 shadow-sm mb-4 academic-publication">
                             <div class="card-body">
                                 <h6 class="text-primary mb-3">
                                     <i class="bi bi-plus-circle me-2"></i>
-                                    Additional Accepted Papers
+                                    Additional Conference Paper
                                 </h6>
                                 
                                 <!-- BIM 2025 Paper -->
@@ -658,12 +680,13 @@
                                             <!-- Right side - Details -->
                                             <div class="col-md-8">
                                                 <div class="d-flex justify-content-between align-items-start mb-3">
-                                                    <span class="badge bg-success">BIM 2025</span>
-                                                    <small class="text-muted">Accepted</small>
+                                                    <span class="badge bg-success">Springer LNNS (BIM 2025)</span>
+                                                    <small class="text-muted">Published: February 2026</small>
                                                 </div>
                                                 <h5 class="card-title fw-bold">Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics</h5>
-                                                <p class="card-text text-muted mb-3">Author: <strong>K. Debanath</strong>, S. Aich, and A.Y Srizon</p>
-                                                <p class="card-text text-muted mb-3">Abstract—This paper presents a novel approach to real-time anomaly detection in power system dynamics using Physics-Informed Neural Networks (PINNs). The proposed method integrates domain-specific physical constraints with deep learning techniques to enhance the accuracy and reliability of anomaly detection in critical power infrastructure. By incorporating the underlying physics of power system dynamics, the model achieves superior performance compared to traditional machine learning approaches, particularly in scenarios with limited training data and complex system behaviors.</p>
+                                                <p class="card-text text-muted mb-2">Authors: <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon</p>
+                                                <p class="card-text text-muted mb-2"><strong>Proceedings of the 3rd International Conference on Big Data, IoT and Machine Learning (BIM 2025)</strong>, Lecture Notes in Networks and Systems, vol. 1798, pp. 447–457.</p>
+                                                <p class="card-text text-muted mb-3">Abstract—The stability of modern power grids is increasingly challenged by dynamic disturbances, while conventional data-driven models often require extensive labeled fault data and offer limited interpretability. This work proposes a Physics-Informed Neural Network (PINN) framework for real-time anomaly detection by embedding the swing equation directly into the model loss. To address oscillatory training instability, the method integrates Fourier Feature Mapping with loss weight annealing. Trained only on sparse normal-operation data, the model reconstructs system states accurately and uses the physics residual as an interpretable anomaly signal. Experiments on a Single-Machine Infinite Bus system show instantaneous and precise fault detection, with clearer and more interpretable signals than an LSTM baseline.</p>
                                                 
                                                 <div class="d-flex flex-wrap gap-1 mb-3">
                                                     <span class="badge bg-light text-dark">Physics-Informed Neural Networks</span>
@@ -718,8 +741,11 @@
                                                 </div>
                                                 
                                                 <div class="publication-links">
-                                                    <a href="https://confbim.com/" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">
-                                                        <i class="bi bi-building me-1"></i>BIM 2025 Conference
+                                                    <a href="https://link.springer.com/chapter/10.1007/978-3-032-15346-3_31" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank">
+                                                        <i class="bi bi-book me-1"></i>Springer Chapter
+                                                    </a>
+                                                    <a href="https://doi.org/10.1007/978-3-032-15346-3_31" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank">
+                                                        <i class="bi bi-link-45deg me-1"></i>DOI
                                                     </a>
                                                     <a href="https://youtu.be/jJF2ijgQo-I" class="btn btn-sm btn-outline-danger me-2 mb-2" target="_blank">
                                                         <i class="bi bi-youtube me-1"></i>Video Presentation
@@ -1181,6 +1207,19 @@
                             <h5 class="card-title text-primary">Pinecone Canopy</h5>
                             <p class="card-text">RAG framework and context engine for retrieval-augmented generation systems</p>
                             <a href="https://github.com/pinecone-io/canopy/commit/44cfad11add34fc61d6e9f9f0ac4071ff24195bf" target="_blank" class="btn btn-sm btn-outline-primary">View Commit</a>
+                        </div>
+                    </div>
+
+                    <div class="card border-0 shadow-sm mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Khoj AI</h5>
+                            <p class="card-text">Open-source AI search and personal assistant platform</p>
+                            <ul class="list-unstyled mb-3">
+                                <li>• Added copy-to-clipboard support for references in the web app reference panel</li>
+                                <li>• Implemented markdown bullet-list formatting for copied references (notes, online, and code)</li>
+                                <li>• Contribution merged into <strong>master</strong> as PR #1144 with follow-up UX polish</li>
+                            </ul>
+                            <a href="https://github.com/khoj-ai/khoj/pull/1144" target="_blank" class="btn btn-sm btn-outline-primary">View Merged PR #1144</a>
                         </div>
                     </div>
                 </div>
