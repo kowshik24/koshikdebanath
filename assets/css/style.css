@@ -4339,6 +4339,29 @@ footer small {
         border: 1px solid var(--anthropic-border) !important;
         border-radius: 12px;
     }
+
+    /* Fix empty mobile nav bar: hide collapse container fully until opened */
+    #header .navbar-collapse:not(.show) {
+        display: none !important;
+        background: transparent !important;
+        border: 0 !important;
+        padding: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    #header .navbar-collapse.show {
+        display: block !important;
+        margin-top: 0.7rem;
+        padding: 0.55rem 0.8rem;
+    }
+
+    /* Override legacy `.navbar ul { display: none; }` from old template CSS */
+    #header .navbar-collapse.show .navbar-nav {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -4353,5 +4376,250 @@ footer small {
 
     .featured-work-links {
         font-size: 0.86rem;
+    }
+}
+
+/* ------------------------------------------------------------------
+   Final device QA hardening (phones/tablets/laptops)
+------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    p,
+    li,
+    .card-text,
+    .lead,
+    .publication-meta-standard,
+    .expertise-content,
+    .text-muted {
+        font-size: 16px !important;
+        line-height: 24px !important;
+    }
+
+    .section-title {
+        font-size: 1.9rem !important;
+    }
+
+    .card-body,
+    .timeline-content,
+    .slides-download-section,
+    .presentation-slides {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
+    p,
+    li,
+    .card-text,
+    .lead,
+    .publication-meta-standard,
+    .expertise-content,
+    .text-muted {
+        font-size: 15px !important;
+        line-height: 23px !important;
+    }
+
+    .section-title {
+        font-size: 1.58rem !important;
+    }
+
+    .researcher-name {
+        font-size: 1.95rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .academic-social .academic-link {
+        width: 100%;
+    }
+
+    .publication-links .btn,
+    .project-links .btn,
+    .slides-download-section .btn,
+    .presentation-slides .btn,
+    .conference-slides .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slides-download-section .row > [class*="col-"],
+    .presentation-info,
+    .presentation-slides {
+        text-align: left !important;
+    }
+
+    .ratio.ratio-16x9 {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    #header .navbar {
+        min-height: 58px;
+        align-items: center;
+    }
+
+    #header .navbar-brand {
+        font-size: 1.08rem !important;
+        line-height: 1.1 !important;
+        max-width: calc(100% - 86px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: 0.5rem;
+    }
+
+    #header .navbar-toggler {
+        flex: 0 0 auto;
+        width: 54px;
+        height: 46px;
+        padding: 0.2rem;
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-section {
+        padding-top: 1.8rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .researcher-name {
+        font-size: 1.72rem !important;
+    }
+
+    .institution {
+        font-size: 0.88rem !important;
+    }
+
+    .card-body,
+    .timeline-content,
+    .slides-download-section,
+    .presentation-slides,
+    .featured-work-panel {
+        padding: 0.85rem !important;
+    }
+
+    .publication-title,
+    .card-title {
+        font-size: 1.03rem !important;
+        line-height: 1.35 !important;
+    }
+
+    .artifact-pill,
+    .badge {
+        font-size: 0.74rem !important;
+    }
+}
+
+/* ------------------------------------------------------------------
+   Small-height viewport polish (older laptops / short screens)
+------------------------------------------------------------------- */
+
+@media (max-height: 900px) and (min-width: 992px) {
+    body {
+        padding-top: 66px;
+    }
+
+    #header .navbar {
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+    }
+
+    .hero-section {
+        min-height: calc(100vh - 66px) !important;
+        padding-top: 1.9rem !important;
+        padding-bottom: 1.3rem !important;
+    }
+
+    .hero-section .academic-header > * {
+        margin-bottom: 0.7rem !important;
+    }
+
+    .researcher-name {
+        font-size: clamp(2rem, 3.4vw, 2.65rem) !important;
+        line-height: 1.14 !important;
+    }
+
+    .institution {
+        font-size: 0.96rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .research-interests .lead {
+        font-size: 0.98rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .featured-work-panel {
+        margin-top: 0.65rem !important;
+        padding: 0.8rem 0.9rem 0.65rem !important;
+    }
+
+    .featured-work-item p {
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .featured-work-links {
+        font-size: 0.82rem !important;
+    }
+
+    .researcher-photo {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .academic-headshot {
+        max-height: 305px;
+        object-fit: cover;
+    }
+}
+
+@media (max-height: 760px) and (min-width: 992px) {
+    .hero-section {
+        padding-top: 1.2rem !important;
+        padding-bottom: 0.9rem !important;
+    }
+
+    .researcher-name {
+        font-size: clamp(1.82rem, 3vw, 2.35rem) !important;
+    }
+
+    .research-interests {
+        margin-bottom: 0.7rem !important;
+    }
+
+    .academic-links {
+        margin-bottom: 0.7rem !important;
+    }
+
+    .academic-social {
+        gap: 0.5rem !important;
+    }
+
+    .academic-social .academic-link {
+        font-size: 0.85rem !important;
+        padding: 0.15rem 0.25rem;
+    }
+
+    .featured-work-panel {
+        padding: 0.65rem 0.75rem 0.55rem !important;
+    }
+
+    .featured-work-item {
+        padding-bottom: 0.55rem;
     }
 }
