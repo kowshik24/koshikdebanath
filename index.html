@@ -49,25 +49,30 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section d-flex align-items-center">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
+            <div class="row align-items-start g-4 g-xl-5">
+                <div class="col-lg-7">
                     <div class="academic-header">
                         <h1 class="researcher-name">Koshik Debanath</h1>
                         <p class="institution">Machine Learning & AI Research | Computer Vision | NLP</p>
                         <div class="affiliation mb-4">
-                            <p class="text-muted mb-2">
+                            <p class="text-muted mb-2 affiliation-item">
                                 <i class="bi bi-geo-alt-fill me-2"></i>Rajshahi University of Engineering & Technology
                             </p>
-                            <p class="text-muted">
+                            <p class="text-muted mb-0 affiliation-item">
                                 <i class="bi bi-envelope-fill me-2"></i>koshik.debanath@gmail.com
                             </p>
                         </div>
                         <div class="research-interests mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2" style="color: #2c3e50; font-size: 0.9rem; letter-spacing: 1px;">Research Interests</h6>
-                            <p class="lead" style="font-size: 1.1rem; line-height: 1.6;">
-                                Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, 
-                                Medical Image Analysis, Low-Resource Language Processing, Generative AI
-                            </p>
+                            <h6 class="text-uppercase fw-bold mb-3">Research Interests</h6>
+                            <div class="interest-tags">
+                                <span class="interest-tag">Machine Learning</span>
+                                <span class="interest-tag">Deep Learning</span>
+                                <span class="interest-tag">Computer Vision</span>
+                                <span class="interest-tag">Natural Language Processing</span>
+                                <span class="interest-tag">Medical Image Analysis</span>
+                                <span class="interest-tag">Low-Resource Language Processing</span>
+                                <span class="interest-tag">Generative AI</span>
+                            </div>
                         </div>
                         <div class="academic-links mb-4">
                             <a href="#publications" class="btn btn-academic me-3">Publications</a>
@@ -90,9 +95,10 @@
 
                         <div class="featured-work-panel mt-4">
                             <h6 class="featured-work-title mb-3">Featured Work</h6>
-                            <div class="featured-work-list">
+                            <div class="featured-work-list featured-work-scroll">
                                 <div class="featured-work-item">
-                                    <p class="mb-2"><strong>Bengali QA with Llama (ECCE 2025):</strong> Low-resource Bengali question answering with transfer learning and conference validation.</p>
+                                    <p class="mb-1"><strong>Bengali QA with Llama (ECCE 2025):</strong> Low-resource Bengali question answering with transfer learning and conference validation.</p>
+                                    <p class="featured-work-date mb-2"><i class="bi bi-calendar3 me-1"></i>Date: 2025</p>
                                     <div class="featured-work-links">
                                         <a href="https://ieeexplore.ieee.org/document/11013841" target="_blank" rel="noopener">Paper</a>
                                         <span class="featured-separator">|</span>
@@ -102,7 +108,8 @@
                                     </div>
                                 </div>
                                 <div class="featured-work-item">
-                                    <p class="mb-2"><strong>PINN Anomaly Detection (BIM 2025):</strong> Physics-informed real-time power-system anomaly detection with interpretable residual signals.</p>
+                                    <p class="mb-1"><strong>PINN Anomaly Detection (BIM 2025):</strong> Physics-informed real-time power-system anomaly detection with interpretable residual signals.</p>
+                                    <p class="featured-work-date mb-2"><i class="bi bi-calendar3 me-1"></i>Date: 2025</p>
                                     <div class="featured-work-links">
                                         <a href="https://link.springer.com/chapter/10.1007/978-3-032-15346-3_31" target="_blank" rel="noopener">Paper</a>
                                         <span class="featured-separator">|</span>
@@ -112,7 +119,8 @@
                                     </div>
                                 </div>
                                 <div class="featured-work-item">
-                                    <p class="mb-2"><strong>DataSciencePilot (RAG System):</strong> Research-to-product RAG pipeline for document-grounded question answering.</p>
+                                    <p class="mb-1"><strong>DataSciencePilot (RAG System):</strong> Research-to-product RAG pipeline for document-grounded question answering.</p>
+                                    <p class="featured-work-date mb-2"><i class="bi bi-calendar3 me-1"></i>Date: Ongoing</p>
                                     <div class="featured-work-links">
                                         <span class="artifact-soon">Paper (Soon)</span>
                                         <span class="featured-separator">|</span>
@@ -125,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-5 text-center text-lg-end">
                     <div class="researcher-photo">
                         <img src="assets/img/koshik-debanath.png" alt="Koshik Debanath" class="img-fluid academic-headshot">
                     </div>
@@ -163,11 +171,13 @@
                                 <div class="card-body text-center">
                                     <i class="bi bi-lightbulb-fill fs-1 mb-3" style="color: var(--academic-accent);"></i>
                                     <h5 class="card-title">Research Focus</h5>
-                                    <div class="research-areas">
-                                        <p class="mb-1">• Machine Learning & Deep Learning</p>
-                                        <p class="mb-1">• Computer Vision & Medical Imaging</p>
-                                        <p class="mb-1">• Natural Language Processing</p>
-                                        <p class="mb-0">• Low-Resource Language Processing</p>
+                                    <div class="research-areas text-start">
+                                        <ul class="research-focus-list mb-0">
+                                            <li>Machine Learning & Deep Learning</li>
+                                            <li>Computer Vision & Medical Imaging</li>
+                                            <li>Natural Language Processing</li>
+                                            <li>Low-Resource Language Processing</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +261,7 @@
                                 </div>
                                 <h5 class="card-title fw-bold">Bayesian Physics-Informed Neural Networks for Parameter Inference and Uncertainty Quantification in Reaction-Diffusion Models of Wound Healing</h5>
                                 <p class="publication-meta-standard mb-3">
-                                    K. Debanath, S. Aich, and A.Y. Srizon · Mathematical Biosciences · 2025 · Status: Under Review
+                                    <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · Mathematical Biosciences · 2025 · Status: Under Review
                                 </p>
                                 <p class="card-text text-muted mb-3">Abstract-Predictive mathematical models of biological processes like wound healing are essential for quantitative understanding, but their clinical utility is often limited by a critical roadblock: uncertainty in their biophysical parameters. These parameters are difficult to measure directly and must be inferred from sparse, noisy data. This paper presents a Bayesian Physics-Informed Neural Network (BPINN) framework to address this challenge by performing robust parameter inference and principled uncertainty quantification. We frame the identification of unknown parameters in a coupled reaction-diffusion system for wound healing as a Bayesian inverse problem. By integrating sparse observational data with the governing physical laws within a variational inference framework, the BPINN learns the full posterior distributions of unknown model parameters. Our results show that the framework accurately infers key reaction parameters from a dataset comprising less than 0.01% of the full spatio-temporal domain. More importantly, the BPINN correctly diagnoses that the cell motility parameter is practically non-identifiable from the sparse data, a conclusion supported by the large posterior uncertainty it assigns. The model’s predictive uncertainty is well-calibrated, being highest in regions far from observations. This work establishes the dual value of BPINNs as a powerful computational tool: both for developing reliable, personalized biomechanical models through data-driven calibration, and for diagnosing parameter identifiability issues—a critical step towards building trustworthy models in computational medicine and systems biology.</p>
                                 <div class="d-flex gap-2 mb-3">
@@ -281,7 +291,7 @@
                                 </div>
                                 <h5 class="card-title fw-bold">Optimizing Semantic Retrieval for Bengali: A Comparative Analysis of Monolingual and Multilingual Embeddings with Matryoshka Representation Learning</h5>
                                 <p class="publication-meta-standard mb-3">
-                                    K. Debanath and A.Y. Srizon · Transactions on Asian and Low-Resource Language Information Processing (TALLIP) · 2026 · Status: Under Review
+                                    <strong>K. Debanath</strong> and A.Y. Srizon · Transactions on Asian and Low-Resource Language Information Processing (TALLIP) · 2026 · Status: Under Review
                                 </p>
                                 <p class="card-text text-muted mb-3">Abstract—Effective semantic retrieval remains the primary bottleneck for Bengali Retrieval-Augmented Generation (RAG) systems. While general-purpose multilingual models exist, they often lack the semantic alignment required for high-precision tasks. This paper presents a comparative study of three embedding architectures—monolingual (shihab17), distilled multilingual (distiluse), and paraphrase-focused (mpnet)—to identify the strongest retrieval foundation for Bengali. The models are fine-tuned on the BanglaRQA dataset with a composite objective combining Multiple Negatives Ranking Loss and Matryoshka Representation Learning (MRL). Results show that architectural choice is decisive: the fine-tuned mpnet model achieves an NDCG@10 of 0.8114 and statistically outperforms the monolingual baseline (p &lt; 0.001). Beyond retrieval quality, efficiency analysis for low-resource deployment shows that MRL-trained MPNet preserves 96% of retrieval effectiveness at 128 dimensions, reducing storage cost by 83% without meaningful accuracy loss.</p>
                                 <p class="card-text text-muted mb-3"><strong>CCS Concepts:</strong> Computing methodologies → Natural language processing; Neural networks. Information systems → Retrieval models and ranking.</p>
@@ -345,7 +355,7 @@
                                         </h5>
                                         
                                         <p class="publication-meta-standard mb-3">
-                                            K. Debanath, A.F.M.M. Rahman, and M.A. Hossain · 2023 26th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 1-6 · 2023 · Status: Published
+                                            <strong>K. Debanath</strong>, A.F.M.M. Rahman, and M.A. Hossain · 2023 26th International Conference on Computer and Information Technology (ICCIT), Cox's Bazar, Bangladesh, pp. 1-6 · 2023 · Status: Published
                                         </p>
                                         
                                         <div class="abstract-section mb-3">
@@ -426,7 +436,7 @@
                                         </div>
                                         <h5 class="card-title fw-bold">Advancing Low-Resource NLP: Contextual Question Answering for Bengali Language Using Llama</h5>
                                         <p class="publication-meta-standard mb-3">
-                                            K. Debanath, S. Aich, and A.Y. Srizon · IEEE ECCE · 2025 · Status: Published
+                                            <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · IEEE ECCE · 2025 · Status: Published
                                         </p>
                                         <p class="card-text text-muted mb-3">Abstract—Natural language processing (NLP) has witnessed significant advancements in recent years, particularly in improving question-answering (QA) systems for well-resourced languages such as English. However, the development of such systems for low-resource languages, including Bengali, remains insufficiently explored. This study proposes an approach to developing a Bengali QA system utilizing the Llama-3.2-3B-Instruct model, leveraging transfer learning techniques on a synthetic dataset derived from the SQuAD 2.0 benchmark...</p>
                                         
@@ -524,7 +534,7 @@
                                         </div>
                                         <h5 class="card-title fw-bold">Distinguishing Between Formal and Colloquial: A Multilingual BERT Approach to Bengali Language Classification</h5>
                                         <p class="publication-meta-standard mb-3">
-                                            S. Aich, K. Debanath, and A.Y. Srizon · IEEE ECCE · 2025 · Status: Published
+                                            S. Aich, <strong>K. Debanath</strong>, and A.Y. Srizon · IEEE ECCE · 2025 · Status: Published
                                         </p>
                                         <p class="card-text text-muted mb-3">Abstract—The Bengali language, rich in history and cultural significance, poses unique challenges in Natural Language Processing (NLP) due to its dual-register structure: Sadhu (formal) and Cholit (colloquial). These registers differ significantly in syntax, vocabulary, and usage, complicating tasks such as text classification, translation, and sentiment analysis...</p>
                                         
@@ -603,7 +613,7 @@
                                         </div>
                                         <h5 class="card-title fw-bold">Analyzing Bot Activity and Political Discourse in the 2024 U.S. Presidential Election: A Machine Learning Approach to Misinformation and Manipulation</h5>
                                         <p class="publication-meta-standard mb-3">
-                                            K. Debanath, S. Aich, and A.Y. Srizon · IEEE NCIM · 2025 · Status: Published
+                                            <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · IEEE NCIM · 2025 · Status: Published
                                         </p>
                                         <p class="card-text text-muted mb-3">Abstract—Social media has become a battleground for political discourse, with automated accounts (bots) playing a growing role in shaping public opinion and engagement. In the context of the 2024 U.S. Presidential Election, understanding bot activity is crucial for identifying potential misinformation and manipulation tactics...</p>
                                         
@@ -673,7 +683,7 @@
                                 </div>
                                 <h5 class="card-title fw-bold">Distinguishing Human-Written and AI-Generated Text: A Comprehensive Study Using Explainable Artificial Intelligence in Text Classification</h5>
                                 <p class="publication-meta-standard mb-3">
-                                    S. Aich, K. Debanath, and A.Y. Srizon · IEEE NCIM · 2025 · Status: Published
+                                    S. Aich, <strong>K. Debanath</strong>, and A.Y. Srizon · IEEE NCIM · 2025 · Status: Published
                                 </p>
                                 <p class="card-text text-muted mb-3">Abstract—Enhancing interpretability without compromising accuracy is a critical challenge in text classification. This re- search explores the integration of Explainable Artificial In- telligence (XAI) techniques with advanced machine learning models, utilizing the Local Interpretable Model-Agnostic Expla- nations (LIME) framework to provide transparency. A fine-tuned BERT model achieved state-of-the-art performance, surpassing Random Forest and Sentence Embedding-based models with a perfect 100% accuracy (ROC-AUC score of 1.00). While Random Forest classifiers offered a solid baseline, they struggled with semantic nuances, underscoring the need for embedding- based approaches. The study highlights the inherent trade-off between interpretability and accuracy, demonstrating that while transformer-based models like BERT excel at capturing complex linguistic patterns, their ”black-box” nature necessitates tools like LIME for explainability. By bridging this gap, the research contributes to the development of more transparent, reliable, and high-performing AI systems.</p>
                                 <div class="d-flex gap-2 mb-3">
@@ -772,7 +782,7 @@
                                                 </div>
                                                 <h5 class="card-title fw-bold">Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics</h5>
                                                 <p class="publication-meta-standard mb-3">
-                                                    K. Debanath, S. Aich, and A.Y. Srizon · Proceedings of the 3rd International Conference on Big Data, IoT and Machine Learning (BIM 2025), Lecture Notes in Networks and Systems, vol. 1798, pp. 447–457 · 2026 · Status: Published
+                                                    <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · Proceedings of the 3rd International Conference on Big Data, IoT and Machine Learning (BIM 2025), Lecture Notes in Networks and Systems, vol. 1798, pp. 447–457 · 2026 · Status: Published
                                                 </p>
                                                 <p class="card-text text-muted mb-3">Abstract—The stability of modern power grids is increasingly challenged by dynamic disturbances, while conventional data-driven models often require extensive labeled fault data and offer limited interpretability. This work proposes a Physics-Informed Neural Network (PINN) framework for real-time anomaly detection by embedding the swing equation directly into the model loss. To address oscillatory training instability, the method integrates Fourier Feature Mapping with loss weight annealing. Trained only on sparse normal-operation data, the model reconstructs system states accurately and uses the physics residual as an interpretable anomaly signal. Experiments on a Single-Machine Infinite Bus system show instantaneous and precise fault detection, with clearer and more interpretable signals than an LSTM baseline.</p>
                                                 
