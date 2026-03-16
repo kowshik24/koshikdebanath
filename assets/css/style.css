@@ -4726,3 +4726,39 @@ footer small {
         padding-bottom: 0.55rem;
     }
 }
+
+/* --------------------------------------------------------------
+   Mobile navbar brand readability fixes
+-------------------------------------------------------------- */
+#header .navbar-brand {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 72px;
+    }
+
+    #home.hero-section {
+        padding-top: 3.05rem !important;
+    }
+
+    .researcher-name {
+        margin-top: 0.35rem;
+    }
+
+    #header .navbar-brand {
+        font-size: 1.02rem !important;
+        max-width: calc(100% - 78px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    #home.hero-section {
+        padding-top: 2.7rem !important;
+    }
+}
