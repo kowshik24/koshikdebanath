@@ -5036,3 +5036,44 @@ section {
         padding: 0.92rem !important;
     }
 }
+
+/* --------------------------------------------------------------
+   Final Rhythm + Tablet Navigation Refinement
+-------------------------------------------------------------- */
+
+section.py-5 {
+    padding-top: clamp(3rem, 5.2vw, 4.5rem) !important;
+    padding-bottom: clamp(3rem, 5.2vw, 4.5rem) !important;
+}
+
+#about.py-5 {
+    padding-top: clamp(2.75rem, 4.7vw, 4rem) !important;
+}
+
+#header .navbar-nav .nav-link {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1199.98px) {
+    html {
+        scroll-padding-top: 82px;
+    }
+
+    #header .navbar-collapse {
+        border-radius: var(--ux-radius-md);
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        background: rgba(255, 255, 255, 0.97);
+        margin-top: 0.55rem;
+        padding: 0.45rem;
+    }
+
+    #header .navbar-nav {
+        gap: 0;
+    }
+
+    #header .navbar-nav .nav-link {
+        text-align: left;
+        border-radius: 10px;
+        padding: 0.58rem 0.72rem;
+    }
+}
