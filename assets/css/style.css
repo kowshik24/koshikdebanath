@@ -4798,7 +4798,6 @@ section {
 }
 
 #header .navbar {
-    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
     backdrop-filter: saturate(150%) blur(8px);
 }
 
