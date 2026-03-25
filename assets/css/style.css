@@ -4797,8 +4797,13 @@ section {
     scroll-margin-top: 88px;
 }
 
+#header {
+    padding: 0 !important;
+}
+
 #header .navbar {
-    border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+    border: 0 !important;
+    box-shadow: none !important;
     backdrop-filter: saturate(150%) blur(8px);
 }
 
@@ -4814,6 +4819,8 @@ section {
 
 #home.hero-section {
     min-height: calc(100vh - 74px);
+    margin-top: 0 !important;
+    border-top: 0 !important;
     padding-top: clamp(2.8rem, 6vw, 5.4rem) !important;
     padding-bottom: clamp(2.1rem, 5vw, 4.4rem) !important;
 }
