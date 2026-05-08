@@ -5084,3 +5084,268 @@ section.py-5 {
         padding: 0.58rem 0.72rem;
     }
 }
+
+/* Created by Peek from www.anthropic.com */
+/* Version: 0.8.9.1 */
+/* Created at: 4/21/2026, 1:00:16 PM */
+/* Learn more: https://trypeek.app */
+
+/* Page color/layout anchors from export */
+:root {
+  --peek-screen: #faf9f5;
+  --peek-page-wrap: #f0eee6;
+  --peek-footer: #141413;
+  --peek-footer-muted: #b0aea5;
+  --font-anthropic-serif: 'Fraunces', Georgia, serif;
+  --font-anthropic-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-anthropic-mono: 'SFMono-Regular', ui-monospace, 'Cascadia Code', Menlo, monospace;
+  --text-12: 12px;
+  --text-15: 15px;
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-61: 61px;
+  --text-91: 91px;
+  --tracking-neg-0-08: -0.08px;
+  --tracking-neg-0-24: -0.24px;
+}
+
+body {
+  background: var(--peek-screen) !important;
+}
+
+#header,
+.hero-section,
+section.py-5 {
+  background: var(--peek-page-wrap) !important;
+}
+
+/* Typography – Semantic type styles (Layer 1) */
+.type-h2 {
+  font-family: var(--font-anthropic-serif);
+  font-size: var(--text-91);
+  font-weight: 400;
+  line-height: 1.11;
+}
+
+.type-h1 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-61);
+  font-weight: 700;
+  line-height: 1.11;
+}
+
+.type-heading {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-24);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.type-body {
+  font-family: var(--font-anthropic-serif);
+  font-size: var(--text-24);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.type-subheading {
+  font-family: var(--font-anthropic-serif);
+  font-size: var(--text-20);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.type-link {
+  font-family: var(--font-anthropic-serif);
+  font-size: var(--text-18);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.type-body-18 {
+  font-family: var(--font-anthropic-serif);
+  font-size: var(--text-18);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.type-h3 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-16);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.type-body-16 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-16);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.type-body-16-400 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-16);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.type-body-16-mono {
+  font-family: var(--font-anthropic-mono);
+  font-size: var(--text-16);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.type-small-body {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-15);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: var(--tracking-neg-0-08);
+}
+
+.type-small-body-15 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-15);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: var(--tracking-neg-0-08);
+}
+
+.type-h3-12 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-12);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.type-link-12 {
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--text-12);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: var(--tracking-neg-0-24);
+}
+
+.researcher-name {
+  font-family: var(--font-anthropic-sans) !important;
+  font-size: clamp(44px, 6vw, 63px) !important;
+  line-height: 1.08 !important;
+  font-weight: 700 !important;
+}
+
+.institution {
+  font-family: var(--font-anthropic-serif) !important;
+  font-size: clamp(20px, 2.6vw, 24px) !important;
+  line-height: 1.4 !important;
+  font-weight: 400 !important;
+}
+
+.anthropic-footer {
+  background: var(--peek-footer);
+  color: #faf9f5;
+  padding: 4.75rem 0 2rem;
+  margin-top: 0;
+}
+
+.anthropic-footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 3rem;
+}
+
+.anthropic-footer-logo {
+  color: #faf9f5;
+  font-family: var(--font-anthropic-sans);
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.anthropic-footer-copyright {
+  margin-top: 1rem;
+  color: var(--peek-footer-muted);
+  font-size: 12px;
+  letter-spacing: -0.24px;
+}
+
+.anthropic-footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 0.8rem;
+}
+
+.anthropic-footer-social a {
+  color: var(--peek-footer-muted);
+  font-size: 1rem;
+}
+
+.anthropic-footer-social a:hover {
+  color: #faf9f5;
+}
+
+.anthropic-footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.anthropic-footer-group h3 {
+  color: #faf9f5;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-anthropic-sans);
+}
+
+.anthropic-footer-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.anthropic-footer-group li {
+  margin-bottom: 0.38rem;
+}
+
+.anthropic-footer-group a {
+  color: var(--peek-footer-muted);
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  font-family: var(--font-anthropic-sans);
+}
+
+.anthropic-footer-group a:hover {
+  color: #faf9f5;
+}
+
+.anthropic-footer-updated {
+  margin-top: 2rem;
+  color: var(--peek-footer-muted);
+  font-size: 12px;
+  letter-spacing: -0.24px;
+}
+
+@media (max-width: 991.98px) {
+  .anthropic-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .anthropic-footer-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .anthropic-footer {
+    padding: 3.5rem 0 1.5rem;
+  }
+
+  .anthropic-footer-links {
+    grid-template-columns: 1fr;
+  }
+}
