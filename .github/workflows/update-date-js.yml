@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-date:
     runs-on: ubuntu-latest
@@ -33,8 +36,8 @@ jobs:
         let html = fs.readFileSync('index.html', 'utf8');
         
         // Update the last modified date
-        const regex = /<small>Last updated: [^<]*<\/small>/g;
-        html = html.replace(regex, `<small>Last updated: ${currentDate}</small>`);
+        const regex = /Last updated: [^<]*/g;
+        html = html.replace(regex, `Last updated: ${currentDate}`);
         
         // Write back to file
         fs.writeFileSync('index.html', html);

@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-date:
     runs-on: ubuntu-latest
@@ -19,8 +22,8 @@ jobs:
         # Get current date in the desired format
         CURRENT_DATE=$(date '+%B %d, %Y')
         
-        # Update the date in index.html using a more specific pattern
-        sed -i "s|<small>Last updated: [^<]*</small>|<small>Last updated: $CURRENT_DATE</small>|g" index.html
+        # Update the date in index.html by replacing the "Last updated" text regardless of enclosing tag
+        perl -0777 -pe "s/(Last updated: )[^<]*/\$1$CURRENT_DATE/g" -i index.html
         
         # Check if there are changes
         if git diff --quiet; then

@@ -8,6 +8,9 @@ on:
       - 'README.md'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-date:
     runs-on: ubuntu-latest
@@ -35,9 +38,9 @@ jobs:
         with open('index.html', 'r', encoding='utf-8') as file:
             content = file.read()
         
-        # Update the last modified date using regex
-        pattern = r'<small>Last updated: [^<]*</small>'
-        replacement = f'<small>Last updated: {current_date}</small>'
+        # Update the last modified date by replacing the 'Last updated' text regardless of enclosing tag
+        pattern = r'Last updated: [^<]*'
+        replacement = f'Last updated: {current_date}'
         updated_content = re.sub(pattern, replacement, content)
         
         # Write back to file
