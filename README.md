@@ -1,21 +1,25 @@
-# Koshik Debanath - Research Profile
+# Koshik Debanath - Academic Research Profile
 
 [GitHub Pages](https://kowshik24.github.io/kowshik.github.io/)
 [LinkedIn](https://linkedin.com/in/kowshik24) | [GitHub](https://github.com/kowshik24) | [Google Scholar](https://scholar.google.com/citations?user=U6CRjb8AAAAJ&hl=en)
-Rajshahi, Bangladesh
+Brookings, South Dakota, USA
 
 ## About This Website
 
-This is a comprehensive professional researcher profile website showcasing my academic research, publications, and expertise in machine learning, computer vision, and natural language processing. The website is designed with a clean, academic aesthetic that emphasizes research contributions and professional credentials, similar to [Nazmus Saquib&#39;s research profile](https://www.nsaquib.org/).
+This is a professional academic portfolio website for Koshik Debanath, a PhD student in Computer Science and Graduate Research Assistant at South Dakota State University. The website presents research interests, publications, academic experience, software engineering background, and selected AI/ML systems.
 
 ## Research Focus Areas
 
-- **Computer Vision & Medical Imaging**: Specialized in MRI image analysis and medical diagnosis
-- **Natural Language Processing**: Expertise in low-resource language processing, particularly Bengali
-- **Machine Learning & AI**: Deep learning applications, LLM fine-tuning, and generative AI
-- **Data Science**: Fraud detection, predictive analytics, and sports data analysis
+- **Explainable & Trustworthy AI**: Interpretability, explanation fidelity, robustness, and human-centered explainability
+- **Natural Language Processing & LLMs**: Low-resource NLP, Bengali NLP, semantic retrieval, RAG, and LLM evaluation
+- **Computer Vision & Multimodal AI**: Visual recognition, medical imaging, synthetic image detection, and explainable vision systems
+- **Scientific Machine Learning**: Physics-informed neural networks, Bayesian deep learning, uncertainty quantification, and dynamical systems
 
 ## Education
+
+**South Dakota State University**
+Ph.D. in Computer Science; Graduate Research Assistant
+*August 2026 – Present*
 
 **Rajshahi University of Engineering & Technology**
 B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
@@ -57,7 +61,15 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
 - **"Distinguishing Human-Written and AI-Generated Text: A Comprehensive Study Using Explainable Artificial Intelligence in Text Classification"** (Accepted, [NCIM-2025](https://www.confncim.org/))
 - **"Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics"** (Under Review, [BIM 2025](https://confbim.com/))
 
-## Professional Experience
+## Academic & Research Experience
+
+### **Graduate Research Assistant** - South Dakota State University (Brookings, South Dakota, USA)
+
+*August 2026 - Present*
+
+Conducting doctoral research in artificial intelligence and machine learning, with a focus on explainability, trustworthy AI, and related applications in computer vision, NLP, and multimodal learning.
+
+## Industry Experience
 
 ### **Software Engineer I** - Universal Machine Inc. (Sunnyvale, CA, USA - Remote)
 
@@ -82,7 +94,7 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
 
 **Programming Languages:** Python (Expert), C/C++, Java, JavaScript, SQL, MATLAB
 **AI/ML Frameworks:** PyTorch, TensorFlow, Keras, Scikit-learn, LangChain, Transformers, OpenCV
-**AI/ML Expertise:** Generative AI (LLMs, RAG, Fine-tuning), NLP, Computer Vision, Deep Learning, Time Series Analysis, Prompt Engineering, Explainable AI (XAI), Data Mining
+**AI/ML Expertise:** Explainable AI, Trustworthy AI, Generative AI, LLMs, RAG, Fine-tuning, NLP, Computer Vision, Multimodal AI, Scientific Machine Learning, Bayesian Methods, Data Mining
 **Tools & Platforms:** Git, Docker, FastAPI, Flask, Django, CI/CD, MLOps, Pinecone, MongoDB, MySQL, SQLite
 
 ## Research Projects
@@ -207,7 +219,7 @@ This researcher profile website includes:
 - **Publication Showcase**: Detailed display of research papers with interactive visualizations
 - **Research Visualizations**: Charts and graphs for each publication showing performance metrics
 - **Research Areas**: Clear presentation of expertise domains
-- **Professional Timeline**: Academic and work experience presentation
+- **Professional Timeline**: Academic, research, and industry experience presentation
 - **Interactive Elements**: Hover effects, smooth animations, and responsive design
 - **Mobile-Friendly**: Responsive interface for all devices
 - **Modern UI**: Professional styling with smooth transitions
@@ -242,11 +254,10 @@ Each publication includes:
 For research collaborations, academic inquiries, or professional opportunities:
 
 - **Email**: koshik.debanath@gmail.com
-- **Phone**: +8801855675763
 - **LinkedIn**: [kowshik24](https://linkedin.com/in/kowshik24)
 - **GitHub**: [kowshik24](https://github.com/kowshik24)
 - **Google Scholar**: [Koshik Debanath](https://scholar.google.com/citations?user=U6CRjb8AAAAJ&hl=en)
-- **Location**: Rajshahi, Bangladesh
+- **Location**: Brookings, South Dakota, USA
 
 ---
 

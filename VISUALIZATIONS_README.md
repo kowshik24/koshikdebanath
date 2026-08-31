@@ -1,13 +1,13 @@
 # Research Visualization for Koshik Debanath's Profile
 
-This repository contains a focused research visualization generated using Python and matplotlib, designed to showcase research domains and their impact in a clean, professional manner.
+This repository contains a legacy research visualization generated using Python and matplotlib. The radar chart is no longer displayed prominently on the portfolio because its normalized impact scores are manually defined and should not be presented as objective academic metrics without a clearer data source.
 
 ## 🎯 Overview
 
-The visualization system creates an attractive, professional radar chart that highlights:
+The visualization system created a radar chart that highlighted:
 
 - Research domain analysis across multiple dimensions
-- Publications, citations, and impact scores
+- Manually normalized publication, citation, and impact-score fields
 - Clean, focused presentation without overwhelming detail
 
 ## 📊 Generated Visualization
@@ -16,8 +16,9 @@ The visualization system creates an attractive, professional radar chart that hi
 
 - **File**: `research_domains_radar.png`
 - **Type**: Polar/Radar chart
-- **Shows**: Publications, citations, and impact scores across 6 research domains
+- **Shows**: Manually normalized fields across 6 research domains
 - **Features**: Multi-dimensional analysis with normalized scales, professional styling
+- **Current status**: Deprecated from the prominent website experience until the values are tied to documented source data.
 
 ## 🛠️ Technical Implementation
 
@@ -81,7 +82,7 @@ To modify the visualization:
 
 ### HTML Integration
 
-The visualizations are integrated into the main website via:
+If reintroduced, visualizations should be integrated into the main website via:
 
 - Direct image embedding with responsive classes
 - Interactive chart links for enhanced engagement

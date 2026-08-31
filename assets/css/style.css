@@ -2231,6 +2231,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.hero-research-statement {
+    max-width: 760px;
+    color: var(--academic-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+}
+
+.hero-focus-line {
+    color: var(--academic-primary);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
 .research-interests h6 {
     color: var(--academic-primary);
     font-weight: 700;
@@ -3776,6 +3790,15 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-padding-top: 96px;
+}
+
+section[id],
+[id^="project-"] {
+    scroll-margin-top: 96px;
+}
+
 img,
 video,
 canvas,
@@ -4166,6 +4189,70 @@ a,
     background: #f6f7f6;
     color: #6a7671;
     border-color: #d8dfda;
+}
+
+.abstract-details {
+    border-left: 3px solid #d8dfda;
+    background: #f8faf8;
+    padding: 0.75rem 0.9rem;
+    border-radius: 8px;
+}
+
+.abstract-details summary {
+    cursor: pointer;
+    color: #3a4b45;
+    font-weight: 700;
+}
+
+.abstract-details[open] summary {
+    margin-bottom: 0.5rem;
+}
+
+.experience-group-title,
+.project-group-title {
+    color: var(--academic-primary);
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.featured-project .card {
+    border-left: 4px solid var(--academic-accent) !important;
+}
+
+.projects-subheader {
+    max-width: 980px;
+}
+
+.projects-subheader .btn {
+    flex-shrink: 0;
+}
+
+.secondary-interest {
+    background: #f4f2ec !important;
+    color: #5e5d59 !important;
+}
+
+.status-published,
+.status-accepted,
+.status-in-press,
+.status-under-review {
+    font-weight: 700;
+}
+
+.status-published {
+    background: #ecf5ef !important;
+    color: #28523f !important;
+}
+
+.status-accepted,
+.status-in-press {
+    background: #efe8dd !important;
+    color: #5d3a2d !important;
+}
+
+.status-under-review {
+    background: #fff4d6 !important;
+    color: #6f5327 !important;
 }
 
 @media (max-width: 767.98px) {
@@ -4860,9 +4947,40 @@ section {
     transform: translateY(-1px);
 }
 
+#home .affiliation {
+    display: grid;
+    gap: 0.38rem;
+}
+
+#home .affiliation-item {
+    margin-bottom: 0 !important;
+    line-height: 1.35 !important;
+}
+
+#home .affiliation-item i {
+    width: 1.15rem;
+    text-align: center;
+}
+
+.academic-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.72rem;
+}
+
+.academic-links .btn {
+    margin: 0 !important;
+    padding: 0.64rem 1.02rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.2 !important;
+    white-space: nowrap;
+}
+
 .researcher-photo {
     display: inline-block;
     max-width: 360px;
+    margin-top: clamp(3rem, 6vw, 4.75rem);
 }
 
 .academic-headshot {
@@ -4952,6 +5070,7 @@ section {
 
     .researcher-photo {
         max-width: 280px;
+        margin-top: 0;
     }
 
     #header .navbar-collapse {
@@ -4983,9 +5102,58 @@ section {
         padding-bottom: 1.7rem !important;
     }
 
+    #home .container,
+    #home .row,
+    #home .academic-header {
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    #home .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #home .row > [class*="col-"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #home .academic-header {
+        width: calc(100vw - 2rem) !important;
+        max-width: calc(100vw - 2rem) !important;
+        overflow: hidden;
+    }
+
+    #home .institution,
+    #home .affiliation-item,
+    .hero-research-statement,
+    .hero-focus-line {
+        display: block;
+        width: 100%;
+        max-width: calc(100vw - 2rem) !important;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: normal;
+    }
+
     .research-interests h6 {
         font-size: 0.82rem;
         letter-spacing: 0.04em;
+    }
+
+    .interest-tags {
+        width: 100%;
+        max-width: calc(100vw - 2rem) !important;
+        overflow: hidden;
+    }
+
+    .interest-tag {
+        max-width: 100%;
+        white-space: normal;
     }
 
     .interest-tags,
