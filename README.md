@@ -56,12 +56,15 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
   - Multilingual BERT application for Bengali text classification
   - Contribution to computational linguistics and NLP
   - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/11013999) | [DOI](https://doi.org/10.1109/ECCE64574.2025.11013999)
+- **"Analyzing Bot Activity and Political Discourse in the 2024 U.S. Presidential Election: A Machine Learning Approach to Misinformation and Manipulation"** (IEEE NCIM 2025)
 
-### Additional Accepted Papers
+  - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/11160229) | [DOI](https://doi.org/10.1109/NCIM65934.2025.11160229)
+- **"Distinguishing Human-Written and AI-Generated Text: A Comprehensive Study Using Explainable Artificial Intelligence in Text Classification"** (IEEE NCIM 2025)
 
-- **"Analyzing Bot Activity and Political Discourse in the 2024 U.S. Presidential Election: A Machine Learning Approach to Misinformation and Manipulation"** (Accepted, [NCIM-2025](https://www.confncim.org/))
-- **"Distinguishing Human-Written and AI-Generated Text: A Comprehensive Study Using Explainable Artificial Intelligence in Text Classification"** (Accepted, [NCIM-2025](https://www.confncim.org/))
-- **"Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics"** (Under Review, [BIM 2025](https://confbim.com/))
+  - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/11160309) | [DOI](https://doi.org/10.1109/NCIM65934.2025.11160309)
+- **"Physics-Informed Neural Networks for Real-Time Anomaly Detection in Power System Dynamics"** (BIM 2025, Springer LNNS vol. 1798, pp. 447–457)
+
+  - **Links**: [Springer](https://link.springer.com/chapter/10.1007/978-3-032-15346-3_31) | [DOI](https://doi.org/10.1007/978-3-032-15346-3_31)
 
 ## Academic & Research Experience
 
@@ -231,7 +234,6 @@ This researcher profile website includes:
 - **Styling**: Custom CSS with CSS Variables and Flexbox/Grid
 - **Icons**: Bootstrap Icons
 - **Framework**: Bootstrap 5 for responsive design
-- **Charts**: Chart.js for research visualizations
 - **Animations**: CSS transitions and JavaScript interactions
 
 ## Getting Started
@@ -239,7 +241,6 @@ This researcher profile website includes:
 1. Clone the repository
 2. Open `index.html` in a web browser
 3. The website is fully static and can be hosted on any web server
-4. Research visualizations are powered by Chart.js and will render automatically
 
 ## Contact
 
