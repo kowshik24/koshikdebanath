@@ -262,6 +262,17 @@
                             <h6 class="featured-work-title mb-3">Featured Work</h6>
                             <div class="featured-work-list featured-work-scroll">
                                 <div class="featured-work-item">
+                                    <p class="mb-1"><strong>Auditing SHAP in Predictive Maintenance (IEEE BigData 2026):</strong> Mechanism-level statistical audit testing whether SHAP attributions align with documented physical failure mechanisms. Accepted at the TUAI Session, IEEE BigData 2026 (Phoenix, AZ, Dec 14–17).</p>
+                                    <p class="featured-work-date mb-2"><i class="bi bi-calendar3 me-1"></i>Date: 2026</p>
+                                    <div class="featured-work-links">
+                                        <a href="https://kowshik24.github.io/shap-mechanism-audit/static/pdfs/paper.pdf" target="_blank" rel="noopener">Paper</a>
+                                        <span class="featured-separator">|</span>
+                                        <a href="https://github.com/kowshik24/shap-mechanism-audit" target="_blank" rel="noopener">Code</a>
+                                        <span class="featured-separator">|</span>
+                                        <a href="https://kowshik24.github.io/shap-mechanism-audit/" target="_blank" rel="noopener">Project Page</a>
+                                    </div>
+                                </div>
+                                <div class="featured-work-item">
                                     <p class="mb-1"><strong>XAI for AI-Generated Text Detection:</strong> Explainable text classification work studying transparency in human-written versus AI-generated text detection.</p>
                                     <p class="featured-work-date mb-2"><i class="bi bi-calendar3 me-1"></i>Date: 2025</p>
                                     <div class="featured-work-links">
@@ -520,6 +531,101 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-12">
+                        <!-- Publication: IEEE BigData 2026 (TUAI) -->
+                        <div class="card border-0 shadow-sm mb-4 academic-publication">
+                            <div class="card-body">
+                                <div class="row">
+                                    <!-- Left side - Image -->
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <a href="assets/img/shap_audit_pipeline.png" target="_blank" rel="noopener">
+                                            <img src="assets/img/shap_audit_pipeline.png" alt="Mechanism-level SHAP audit pipeline" class="img-fluid rounded shadow publication-image" loading="lazy">
+                                        </a>
+                                        <div class="image-caption mt-2">
+                                            <small class="text-muted">Audit Pipeline Architecture</small>
+                                        </div>
+                                    </div>
+                                    <!-- Right side - Details -->
+                                    <div class="col-md-8">
+                                        <div class="publication-header mb-3">
+                                            <div class="d-flex justify-content-between align-items-start">
+                                                <span class="badge bg-primary publication-venue">IEEE BigData 2026 · TUAI</span>
+                                                <div class="publication-year">
+                                                    <small class="text-muted">Accepted · To appear December 2026</small>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="publication-title fw-bold text-dark mb-3">
+                                            Auditing SHAP Explanations Against Known Failure Mechanisms in Predictive Maintenance
+                                        </h5>
+
+                                        <p class="publication-meta-standard mb-3">
+                                            <strong>K. Debanath</strong>, P. Uprety, and P. Li · IEEE International Conference on Big Data (BigData), Special Session on Towards an Understanding of Artificial Intelligence (TUAI), Phoenix, AZ, USA, Dec 14–17 · 2026 · Status: Accepted
+                                        </p>
+
+                                        <div class="abstract-section mb-3">
+                                            <button class="btn btn-sm btn-outline-secondary abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-conf-bigdata26" aria-expanded="true">
+                                                <i class="bi bi-chevron-up me-1"></i>Hide Abstract
+                                            </button>
+                                            <div class="collapse show mt-2" id="abstract-conf-bigdata26">
+                                                <div class="abstract-content p-3 bg-light rounded">
+                                                    <p class="text-muted small mb-0">
+                                                        <strong>Abstract:</strong> Machine learning models are widely used to predict equipment failures in industrial systems, but accurate predictions do not guarantee that models rely on features consistent with physical failure mechanisms. Although explainable artificial intelligence methods identify influential features, whether these explanations align with documented failure mechanisms is rarely tested statistically. To address this gap, we propose a mechanism-level statistical audit that evaluates whether feature attributions concentrate on mechanism-relevant features, distinguish among failure mechanisms, and reveal potentially misleading feature reliance. Three complementary statistics are evaluated against reference distributions generated by retraining models on shuffled labels. Experiments on the AI4I 2020 benchmark show evidence of attribution alignment for three of four documented failure mechanisms with engineered features, two of which remain aligned in every prespecified input and attribution configuration. Additional evaluations on laboratory bearing recordings and simulated industrial process data demonstrate the applicability of the framework across different settings. Controlled shortcut experiments show that models can maintain high predictive performance while relying on misleading features. A grouped statistic detects shortcuts spread over a few features, although weaker shortcuts may not be detected. Audit conclusions are also sensitive to the choice of explanation method and reference distribution. Overall, the proposed framework enables systematic statistical evaluation of explanation–mechanism alignment, while recognizing that attribution agreement does not establish physical correctness.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="keywords mb-3">
+                                            <div class="keyword-tags">
+                                                <span class="badge bg-light text-dark me-1 mb-1">Explainable AI</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">SHAP</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">Predictive Maintenance</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">Feature Attribution Evaluation</span>
+                                                <span class="badge bg-light text-dark me-1 mb-1">Physical Failure Mechanisms</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="publication-links">
+                                            <a href="https://kowshik24.github.io/shap-mechanism-audit/" class="btn btn-sm btn-primary me-2 mb-2" target="_blank" rel="noopener">
+                                                <i class="bi bi-globe me-1"></i>Project Page
+                                            </a>
+                                            <a href="https://kowshik24.github.io/shap-mechanism-audit/static/pdfs/paper.pdf" class="btn btn-sm btn-outline-primary me-2 mb-2" target="_blank" rel="noopener">
+                                                <i class="bi bi-file-earmark-pdf me-1"></i>Paper (PDF)
+                                            </a>
+                                            <a href="https://kowshik24.github.io/shap-mechanism-audit/static/pdfs/supplement.pdf" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener">
+                                                <i class="bi bi-file-earmark-text me-1"></i>Supplementary
+                                            </a>
+                                            <a href="https://github.com/kowshik24/shap-mechanism-audit" class="btn btn-sm btn-outline-dark me-2 mb-2" target="_blank" rel="noopener">
+                                                <i class="bi bi-github me-1"></i>Code
+                                            </a>
+                                            <button class="btn btn-sm btn-outline-info mb-2" onclick="copyBibTeX('bigdata26')">
+                                                <i class="bi bi-clipboard me-1"></i>BibTeX
+                                            </button>
+                                        </div>
+                                        <div class="artifact-row mt-3">
+                                            <span class="artifact-label">Artifacts:</span>
+                                            <span class="artifact-pill artifact-available"><a href="https://github.com/kowshik24/shap-mechanism-audit" target="_blank" rel="noopener">Code</a></span>
+                                            <span class="artifact-pill artifact-unavailable">Slides: Not available</span>
+                                            <span class="artifact-pill artifact-available"><a href="assets/img/shap_audit_pipeline.png" target="_blank" rel="noopener">Figure</a></span>
+                                            <span class="artifact-pill artifact-available"><a href="https://kowshik24.github.io/shap-mechanism-audit/" target="_blank" rel="noopener">Project Page</a></span>
+                                        </div>
+
+                                        <!-- Hidden BibTeX -->
+                                        <div id="bigdata26-bibtex" style="display: none;">
+@inproceedings{debanath2026auditing,
+  title     = {Auditing {SHAP} Explanations Against Known Failure Mechanisms in Predictive Maintenance},
+  author    = {Debanath, Koshik and Uprety, Prakrit and Li, Peiyu},
+  booktitle = {Proc. IEEE Int. Conf. Big Data (BigData), Special Session on Towards an Understanding of Artificial Intelligence (TUAI)},
+  year      = {2026},
+  note      = {Accepted, to appear}
+}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Publication 1 -->
                         <div class="card border-0 shadow-sm mb-4 academic-publication">
                             <div class="card-body">
@@ -1068,6 +1174,7 @@
                 </div>
             </div>
             
+            </div>
             </div>
         </div>
     </section>

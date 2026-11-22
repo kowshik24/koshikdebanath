@@ -36,23 +36,25 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
 
 ### Peer-Reviewed Conference Papers
 
+- **"Auditing SHAP Explanations Against Known Failure Mechanisms in Predictive Maintenance"** (Accepted, TUAI Session, IEEE BigData 2026, Phoenix, AZ, Dec 14–17)
+
+  - K. Debanath, P. Uprety, and P. Li
+  - Mechanism-level statistical audit testing whether SHAP attributions align with documented physical failure mechanisms
+  - **Links**: [Project Page](https://kowshik24.github.io/shap-mechanism-audit/) | [Paper](https://kowshik24.github.io/shap-mechanism-audit/static/pdfs/paper.pdf) | [Code](https://github.com/kowshik24/shap-mechanism-audit)
 - **"An Attention-Based Deep Learning Approach to Knee Injury Classification from MRI Images"** (IEEE ICCIT 2023)
 
   - Novel attention mechanism for automated knee injury detection
   - Applied to medical imaging and computer vision
-  - **Research Visualization**: Radar chart comparing performance metrics (Accuracy: 94.2%, Sensitivity: 92.8%, Specificity: 95.6%)
   - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/10441340) | [DOI](https://doi.org/10.1109/ICCIT60459.2023.10441340)
 - **"Advancing Low-Resource NLP: Contextual Question Answering for Bengali Language Using Llama"** (ECCE 2025)
 
   - Adaptation of large language models for Bengali language processing
   - Addresses challenges in low-resource language understanding
-  - **Research Visualization**: Bar chart showing performance improvements (BLEU Score: 78.4, ROUGE-L: 0.72, Accuracy: 85.3%)
   - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/11013841) | [DOI](https://doi.org/10.1109/ECCE64574.2025.11013841)
 - **"Distinguishing Between Formal and Colloquial: A Multilingual BERT Approach to Bengali Language Classification"** (ECCE 2025)
 
   - Multilingual BERT application for Bengali text classification
   - Contribution to computational linguistics and NLP
-  - **Research Visualization**: Doughnut chart displaying classification accuracy (F1-Score: 0.89, Precision: 0.91, Recall: 0.87)
   - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/11013999) | [DOI](https://doi.org/10.1109/ECCE64574.2025.11013999)
 
 ### Additional Accepted Papers
@@ -216,22 +218,12 @@ Constructed an Artificial Neural Network with PyTorch to predict patient diabete
 This researcher profile website includes:
 
 - **Professional Design**: Clean, academic aesthetic suitable for research institutions
-- **Publication Showcase**: Detailed display of research papers with interactive visualizations
-- **Research Visualizations**: Charts and graphs for each publication showing performance metrics
+- **Publication Showcase**: Detailed display of research papers with figures, abstracts, and artifacts
 - **Research Areas**: Clear presentation of expertise domains
 - **Professional Timeline**: Academic, research, and industry experience presentation
 - **Interactive Elements**: Hover effects, smooth animations, and responsive design
 - **Mobile-Friendly**: Responsive interface for all devices
 - **Modern UI**: Professional styling with smooth transitions
-
-## Research Visualizations
-
-Each publication includes:
-
-- **Interactive Charts**: Radar charts, bar charts, and doughnut charts using Chart.js
-- **Performance Metrics**: Key research metrics displayed with animated counters
-- **Comparative Analysis**: Our models vs. baseline models performance
-- **Visual Appeal**: Professional charts that enhance understanding of research results
 
 ## Technology Stack
 
