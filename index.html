@@ -282,12 +282,14 @@
                                     </div>
                                 </div>
                                 <div class="featured-work-item">
-                                    <p class="mb-1"><strong>Bengali Semantic Retrieval:</strong> Low-resource Bengali retrieval research comparing monolingual and multilingual embeddings with Matryoshka Representation Learning.</p>
+                                    <p class="mb-1"><strong>Bengali Semantic Retrieval (ACM TALLIP 2026):</strong> Accepted. Low-resource Bengali retrieval research comparing monolingual and multilingual embeddings with Matryoshka Representation Learning.</p>
                                     <p class="featured-work-date mb-2"><i class="bi bi-calendar3 me-1"></i>Date: 2026</p>
                                     <div class="featured-work-links">
-                                        <span class="artifact-soon">Under Review</span>
+                                        <a href="https://kowshik24.github.io/Bangla-Embedding/" target="_blank" rel="noopener">Project Page</a>
                                         <span class="featured-separator">|</span>
-                                        <a href="assets/img/bangla-sentence-transformer-ft-matryoshka-paraphrase-multilingual-mpnet-base-v2.png" target="_blank" rel="noopener">Figure</a>
+                                        <a href="https://github.com/kowshik24/Bangla-Embedding" target="_blank" rel="noopener">Code</a>
+                                        <span class="featured-separator">|</span>
+                                        <a href="https://huggingface.co/Kowshik24" target="_blank" rel="noopener">Models</a>
                                     </div>
                                 </div>
                                 <div class="featured-work-item">
@@ -449,6 +451,69 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-12">
+                        <div class="card border-0 shadow-sm mb-4 academic-publication">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <a href="assets/img/bangla_embedding_architecture.png" target="_blank" rel="noopener">
+                                            <img src="assets/img/bangla_embedding_architecture.png" alt="Fine-tuned Bengali embedding model architecture with Matryoshka Representation Learning" class="img-fluid rounded shadow publication-image" style="max-height: none; object-fit: contain;" loading="lazy">
+                                        </a>
+                                        <div class="image-caption mt-2">
+                                            <small class="text-muted">Model Architecture</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <span class="badge bg-primary">ACM TALLIP</span>
+                                    <small class="text-muted">Accepted · 2026</small>
+                                </div>
+                                <h5 class="card-title fw-bold">Optimizing Semantic Retrieval for Bengali: A Comparative Analysis of Monolingual and Multilingual Embeddings with Matryoshka Representation Learning</h5>
+                                <p class="publication-meta-standard mb-3">
+                                    <strong>K. Debanath</strong> and A.Y. Srizon · ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP) · 2026 · Status: Accepted
+                                </p>
+                                <details class="abstract-details mb-3" open>
+                                    <summary>Abstract</summary>
+                                    <p class="card-text text-muted mb-0">Effective semantic retrieval remains the primary bottleneck for Bengali Retrieval-Augmented Generation (RAG) systems. While general-purpose multilingual models exist, they often lack the semantic alignment required for high-precision tasks. This paper presents a comparative study of three embedding architectures—monolingual (shihab17), distilled multilingual (distiluse), and paraphrase-focused (mpnet)—to identify the strongest retrieval foundation for Bengali. The models are fine-tuned on the BanglaRQA dataset with a composite objective combining Multiple Negatives Ranking Loss and Matryoshka Representation Learning (MRL). Results show that architectural choice is decisive: the fine-tuned mpnet model achieves an NDCG@10 of 0.8114 and statistically outperforms the monolingual baseline (p &lt; 0.001). Beyond retrieval quality, efficiency analysis for low-resource deployment shows that MRL-trained MPNet preserves 96% of retrieval effectiveness at 128 dimensions, reducing storage cost by 83% without meaningful accuracy loss.</p>
+                                </details>
+                                <p class="card-text text-muted mb-3"><strong>CCS Concepts:</strong> Computing methodologies → Natural language processing; Neural networks. Information systems → Retrieval models and ranking.</p>
+                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                    <span class="badge bg-light text-dark">Bengali NLP</span>
+                                    <span class="badge bg-light text-dark">Semantic Retrieval</span>
+                                    <span class="badge bg-light text-dark">Monolingual vs Multilingual Embeddings</span>
+                                    <span class="badge bg-light text-dark">Matryoshka Representation Learning</span>
+                                    <span class="badge bg-light text-dark">Sentence Embeddings</span>
+                                    <span class="badge bg-light text-dark">RAG</span>
+                                </div>
+                                <div class="publication-links">
+                                    <a href="https://kowshik24.github.io/Bangla-Embedding/" class="btn btn-sm btn-primary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-globe me-1"></i>Project Page</a>
+                                    <a href="https://github.com/kowshik24/Bangla-Embedding" class="btn btn-sm btn-outline-dark me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-github me-1"></i>Code</a>
+                                    <a href="https://huggingface.co/Kowshik24" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-box me-1"></i>Models</a>
+                                    <a href="https://huggingface.co/datasets/sartajekram/BanglaRQA" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-database me-1"></i>Dataset</a>
+                                    <button class="btn btn-sm btn-outline-info mb-2" onclick="copyBibTeX('tallip26')"><i class="bi bi-clipboard me-1"></i>BibTeX</button>
+                                </div>
+                                <div class="artifact-row mt-3">
+                                    <span class="artifact-label">Artifacts:</span>
+                                    <span class="artifact-pill artifact-available"><a href="https://github.com/kowshik24/Bangla-Embedding" target="_blank" rel="noopener">Code</a></span>
+                                    <span class="artifact-pill artifact-available"><a href="https://huggingface.co/Kowshik24/bangla-sentence-transformer-ft-matryoshka-paraphrase-multilingual-mpnet-base-v2" target="_blank" rel="noopener">Model (MPNet-FT)</a></span>
+                                    <span class="artifact-pill artifact-available"><a href="assets/img/bangla_embedding_architecture.png" target="_blank" rel="noopener">Figure</a></span>
+                                    <span class="artifact-pill artifact-unavailable">Paper PDF: Coming soon</span>
+                                </div>
+                                <div id="tallip26-bibtex" style="display: none;">
+@article{debanath2026optimizing,
+  title   = {Optimizing Semantic Retrieval for Bengali: A Comparative Analysis of
+             Monolingual and Multilingual Embeddings with Matryoshka
+             Representation Learning},
+  author  = {Debanath, Koshik and Srizon, Azmain Yakin},
+  journal = {ACM Transactions on Asian and Low-Resource Language Information Processing},
+  year    = {2026},
+  note    = {Accepted}
+}
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card border-0 shadow-sm mb-4">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
@@ -482,38 +547,6 @@
                             </div>
                         </div>
 
-                        <div class="card border-0 shadow-sm mb-4">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-start mb-3">
-                                    <span class="badge bg-warning">Under Review</span>
-                                    <small class="text-muted">2026</small>
-                                </div>
-                                <h5 class="card-title fw-bold">Optimizing Semantic Retrieval for Bengali: A Comparative Analysis of Monolingual and Multilingual Embeddings with Matryoshka Representation Learning</h5>
-                                <p class="publication-meta-standard mb-3">
-                                    <strong>K. Debanath</strong> and A.Y. Srizon · Transactions on Asian and Low-Resource Language Information Processing (TALLIP) · 2026 · Status: Under Review
-                                </p>
-                                <details class="abstract-details mb-3" open>
-                                    <summary>Abstract</summary>
-                                    <p class="card-text text-muted mb-0">Effective semantic retrieval remains the primary bottleneck for Bengali Retrieval-Augmented Generation (RAG) systems. While general-purpose multilingual models exist, they often lack the semantic alignment required for high-precision tasks. This paper presents a comparative study of three embedding architectures—monolingual (shihab17), distilled multilingual (distiluse), and paraphrase-focused (mpnet)—to identify the strongest retrieval foundation for Bengali. The models are fine-tuned on the BanglaRQA dataset with a composite objective combining Multiple Negatives Ranking Loss and Matryoshka Representation Learning (MRL). Results show that architectural choice is decisive: the fine-tuned mpnet model achieves an NDCG@10 of 0.8114 and statistically outperforms the monolingual baseline (p &lt; 0.001). Beyond retrieval quality, efficiency analysis for low-resource deployment shows that MRL-trained MPNet preserves 96% of retrieval effectiveness at 128 dimensions, reducing storage cost by 83% without meaningful accuracy loss.</p>
-                                </details>
-                                <p class="card-text text-muted mb-3"><strong>CCS Concepts:</strong> Computing methodologies → Natural language processing; Neural networks. Information systems → Retrieval models and ranking.</p>
-                                <div class="d-flex flex-wrap gap-2 mb-1">
-                                    <span class="badge bg-light text-dark">Bengali NLP</span>
-                                    <span class="badge bg-light text-dark">Semantic Retrieval</span>
-                                    <span class="badge bg-light text-dark">Monolingual vs Multilingual Embeddings</span>
-                                    <span class="badge bg-light text-dark">Matryoshka Representation Learning</span>
-                                    <span class="badge bg-light text-dark">Sentence Embeddings</span>
-                                    <span class="badge bg-light text-dark">RAG</span>
-                                </div>
-                                <div class="artifact-row mt-3">
-                                    <span class="artifact-label">Artifacts:</span>
-                                    <span class="artifact-pill artifact-unavailable">Code: Not available</span>
-                                    <span class="artifact-pill artifact-unavailable">Slides: Not available</span>
-                                    <span class="artifact-pill artifact-available"><a href="assets/img/bangla-sentence-transformer-ft-matryoshka-paraphrase-multilingual-mpnet-base-v2.png" target="_blank" rel="noopener">Poster/Figure</a></span>
-                                    <span class="artifact-pill artifact-unavailable">Demo: Not available</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
