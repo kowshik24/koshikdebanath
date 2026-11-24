@@ -38,7 +38,7 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
 - **"Bayesian Physics-Informed Neural Networks for Parameter Inference and Uncertainty Quantification in Reaction-Diffusion Models of Wound Healing"** (Under Review, Mathematical Biosciences, July 2025)
   - Novel approach to wound healing modeling using Bayesian Physics-Informed Neural Networks
   - Provides uncertainty quantification and parameter inference for complex biological systems
-  - **Links**: [SSRN Preprint](https://ssrn.com/abstract=5366003) | [DOI](http://dx.doi.org/10.2139/ssrn.5366003)
+  - **Links**: [Project Page](https://kowshik24.github.io/pinn-wound-healing/) | [Paper](https://kowshik24.github.io/pinn-wound-healing/static/pdfs/paper.pdf) | [SSRN Preprint](https://ssrn.com/abstract=5366003) | [DOI](http://dx.doi.org/10.2139/ssrn.5366003)
 
 ### Peer-Reviewed Conference Papers
 

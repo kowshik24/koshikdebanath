@@ -516,8 +516,18 @@
                             </div>
                         </div>
 
-                        <div class="card border-0 shadow-sm mb-4">
+                        <div class="card border-0 shadow-sm mb-4 academic-publication">
                             <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 text-center mb-3 mb-md-0">
+                                        <a href="assets/img/pinn_wound_healing_uq.png" target="_blank" rel="noopener">
+                                            <img src="assets/img/pinn_wound_healing_uq.png" alt="BPINN mean predictions with 95% credible intervals against ground truth at three time snapshots" class="img-fluid rounded shadow publication-image" loading="lazy">
+                                        </a>
+                                        <div class="image-caption mt-2">
+                                            <small class="text-muted">BPINN Predictions with Uncertainty</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <span class="badge bg-warning">Under Review</span>
                                     <small class="text-muted">July 2025</small>
@@ -536,15 +546,33 @@
                                     <span class="badge bg-light text-dark">Scientific Machine Learning</span>
                                 </div>
                                 <div class="publication-links">
-                                    <a href="https://ssrn.com/abstract=5366003" class="btn btn-sm btn-outline-primary me-2" target="_blank">SSRN Preprint</a>
-                                    <a href="http://dx.doi.org/10.2139/ssrn.5366003" class="btn btn-sm btn-outline-secondary" target="_blank">DOI</a>
+                                    <a href="https://kowshik24.github.io/pinn-wound-healing/" class="btn btn-sm btn-primary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-globe me-1"></i>Project Page</a>
+                                    <a href="https://kowshik24.github.io/pinn-wound-healing/static/pdfs/paper.pdf" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf me-1"></i>Paper (PDF)</a>
+                                    <a href="https://ssrn.com/abstract=5366003" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-journal-text me-1"></i>SSRN Preprint</a>
+                                    <a href="http://dx.doi.org/10.2139/ssrn.5366003" class="btn btn-sm btn-outline-secondary me-2 mb-2" target="_blank" rel="noopener"><i class="bi bi-link-45deg me-1"></i>DOI</a>
+                                    <button class="btn btn-sm btn-outline-info mb-2" onclick="copyBibTeX('bpinn25')"><i class="bi bi-clipboard me-1"></i>BibTeX</button>
                                 </div>
                                 <div class="artifact-row mt-3">
                                     <span class="artifact-label">Artifacts:</span>
+                                    <span class="artifact-pill artifact-available"><a href="https://kowshik24.github.io/pinn-wound-healing/static/pdfs/paper.pdf" target="_blank" rel="noopener">Paper PDF</a></span>
+                                    <span class="artifact-pill artifact-available"><a href="https://kowshik24.github.io/pinn-wound-healing/" target="_blank" rel="noopener">Project Page</a></span>
+                                    <span class="artifact-pill artifact-available"><a href="assets/img/pinn_wound_healing_uq.png" target="_blank" rel="noopener">Figure</a></span>
                                     <span class="artifact-pill artifact-unavailable">Code: Not available</span>
                                     <span class="artifact-pill artifact-unavailable">Slides: Not available</span>
                                     <span class="artifact-pill artifact-unavailable">Poster: Not available</span>
                                     <span class="artifact-pill artifact-unavailable">Demo: Not available</span>
+                                </div>
+                                <div id="bpinn25-bibtex" style="display: none;">
+@misc{debanath2025bpinn,
+  title   = {Bayesian Physics-Informed Neural Networks for Parameter Inference and
+             Uncertainty Quantification in Reaction-Diffusion Models of Wound Healing},
+  author  = {Debanath, Koshik and Aich, Sagor and Srizon, Azmain Yakin},
+  year    = {2025},
+  doi     = {10.2139/ssrn.5366003},
+  note    = {SSRN preprint, under review}
+}
+                                </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
