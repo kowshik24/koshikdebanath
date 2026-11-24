@@ -51,7 +51,7 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
 
   - Novel attention mechanism for automated knee injury detection
   - Applied to medical imaging and computer vision
-  - **Links**: [IEEE Xplore](https://ieeexplore.ieee.org/document/10441340) | [DOI](https://doi.org/10.1109/ICCIT60459.2023.10441340)
+  - **Links**: [Project Page](https://koshikdebanath.github.io/acl-injury-risk-predictor/) | [Paper](https://koshikdebanath.github.io/acl-injury-risk-predictor/static/pdfs/An%20Attention-Based%20Deep%20Learning%20Approach%20to%20Knee%20Injury%20Classification%20from%20MRI%20Images.pdf) | [Code](https://github.com/koshikdebanath/acl-injury-risk-predictor) | [IEEE Xplore](https://ieeexplore.ieee.org/document/10441340) | [DOI](https://doi.org/10.1109/ICCIT60459.2023.10441340)
 - **"Advancing Low-Resource NLP: Contextual Question Answering for Bengali Language Using Llama"** (ECCE 2025)
 
   - Adaptation of large language models for Bengali language processing
