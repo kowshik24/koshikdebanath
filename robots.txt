@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /forms/
+Disallow: /thanks.html
+
+Sitemap: https://koshikdebanath.me/sitemap.xml
