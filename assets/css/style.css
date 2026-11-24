@@ -5252,3 +5252,46 @@ section.py-5 {
         padding: 0.58rem 0.72rem;
     }
 }
+
+/* Publication cards: horizontal layout with a figure panel that fills the left side */
+@media (min-width: 768px) {
+    #publications .card-body > .row {
+        align-items: stretch;
+    }
+
+    #publications .card-body > .row > [class*="col-md-"]:has(.publication-image) {
+        flex: 0 0 auto;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        margin-bottom: 0 !important;
+        padding: 1.25rem;
+        background: linear-gradient(160deg, #f4efe4 0%, #ebe4d4 100%);
+        border-radius: 14px;
+    }
+
+    #publications .card-body > .row > [class*="col-md-"]:has(.publication-image) + [class*="col-md-"] {
+        flex: 1 1 0;
+        width: auto;
+        padding-left: 2rem;
+    }
+
+    #publications .publication-image {
+        max-height: 340px !important;
+        object-fit: contain;
+        background: #fff;
+        padding: 0.5rem;
+        box-shadow: 0 6px 18px rgba(60, 45, 20, 0.08) !important;
+    }
+
+    #publications .publication-image:hover {
+        transform: none;
+    }
+
+    #publications .image-caption {
+        margin-top: 0 !important;
+        text-align: center;
+    }
+}

@@ -32,7 +32,8 @@ B.Sc. in Computer Science and Engineering; CGPA: 3.27/4.00
 - **"Optimizing Semantic Retrieval for Bengali: A Comparative Analysis of Monolingual and Multilingual Embeddings with Matryoshka Representation Learning"** (Accepted, ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP), 2026)
   - K. Debanath and A.Y. Srizon
   - Fine-tunes monolingual and multilingual Bengali embedding models with Multiple Negatives Ranking Loss and Matryoshka Representation Learning for retrieval and RAG
-  - **Links**: [Project Page](https://kowshik24.github.io/Bangla-Embedding/) | [Code](https://github.com/kowshik24/Bangla-Embedding) | [Models](https://huggingface.co/Kowshik24)
+  - **Links**: [Project Page](https://kowshik24.github.io/Bangla-Embedding/) | [Code](https://github.com/kowshik24/Bangla-Embedding) | [Models](https://huggingface.co/Kowshik24) | [Dataset](https://huggingface.co/datasets/sartajekram/BanglaRQA)
+  - Key results: fine-tuned MPNet NDCG@10 0.6139 (+127% over base); retains 96.1% effectiveness at 128d with 83.3% less vector storage
 
 - **"Bayesian Physics-Informed Neural Networks for Parameter Inference and Uncertainty Quantification in Reaction-Diffusion Models of Wound Healing"** (Under Review, Mathematical Biosciences, July 2025)
   - Novel approach to wound healing modeling using Bayesian Physics-Informed Neural Networks

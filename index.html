@@ -471,9 +471,9 @@
                                 <p class="publication-meta-standard mb-3">
                                     <strong>K. Debanath</strong> and A.Y. Srizon · ACM Transactions on Asian and Low-Resource Language Information Processing (TALLIP) · 2026 · Status: Accepted
                                 </p>
-                                <details class="abstract-details mb-3" open>
+                                <details class="abstract-details mb-3">
                                     <summary>Abstract</summary>
-                                    <p class="card-text text-muted mb-0">Effective semantic retrieval remains the primary bottleneck for Bengali Retrieval-Augmented Generation (RAG) systems. While general-purpose multilingual models exist, they often lack the semantic alignment required for high-precision tasks. This paper presents a comparative study of three embedding architectures—monolingual (shihab17), distilled multilingual (distiluse), and paraphrase-focused (mpnet)—to identify the strongest retrieval foundation for Bengali. The models are fine-tuned on the BanglaRQA dataset with a composite objective combining Multiple Negatives Ranking Loss and Matryoshka Representation Learning (MRL). Results show that architectural choice is decisive: the fine-tuned mpnet model achieves an NDCG@10 of 0.8114 and statistically outperforms the monolingual baseline (p &lt; 0.001). Beyond retrieval quality, efficiency analysis for low-resource deployment shows that MRL-trained MPNet preserves 96% of retrieval effectiveness at 128 dimensions, reducing storage cost by 83% without meaningful accuracy loss.</p>
+                                    <p class="card-text text-muted mb-0">Effective semantic retrieval remains the primary bottleneck for Bengali Retrieval-Augmented Generation (RAG) systems. While general-purpose multilingual models exist, they often lack the semantic alignment required for high-precision tasks. This paper presents a comparative study of three embedding architectures—monolingual (shihab17), distilled multilingual (distiluse), and paraphrase-focused (mpnet)—to identify the strongest retrieval foundation for Bengali. The models are fine-tuned on the BanglaRQA dataset with a composite objective combining Multiple Negatives Ranking Loss and Matryoshka Representation Learning (MRL). Fine-tuning is decisive: on the 1,124 answerable BanglaRQA test queries, the fine-tuned mpnet model reaches an NDCG@10 of 0.6139 (vs. 0.2695 before fine-tuning) and statistically outperforms the fine-tuned monolingual model (p &lt; 0.001). A BM25 lexical baseline remains strong on this factoid Wikipedia setting (NDCG@10 0.9142), positioning dense fine-tuning as valuable where semantic matching, compression, and downstream RAG integration are needed rather than as a universal replacement for lexical retrieval. In a deployment-efficiency regime (NDCG@10 0.8114 at 768 dimensions), MRL-trained MPNet retains 96.1% of its retrieval effectiveness at 128 dimensions while reducing vector storage by 83.3%.</p>
                                 </details>
                                 <p class="card-text text-muted mb-3"><strong>CCS Concepts:</strong> Computing methodologies → Natural language processing; Neural networks. Information systems → Retrieval models and ranking.</p>
                                 <div class="d-flex flex-wrap gap-2 mb-3">
@@ -495,6 +495,8 @@
                                     <span class="artifact-label">Artifacts:</span>
                                     <span class="artifact-pill artifact-available"><a href="https://github.com/kowshik24/Bangla-Embedding" target="_blank" rel="noopener">Code</a></span>
                                     <span class="artifact-pill artifact-available"><a href="https://huggingface.co/Kowshik24/bangla-sentence-transformer-ft-matryoshka-paraphrase-multilingual-mpnet-base-v2" target="_blank" rel="noopener">Model (MPNet-FT)</a></span>
+                                    <span class="artifact-pill artifact-available"><a href="https://huggingface.co/Kowshik24/bangla-sentence-transformer-ft-matryoshka" target="_blank" rel="noopener">Model (Shihab17-FT)</a></span>
+                                    <span class="artifact-pill artifact-available"><a href="https://huggingface.co/Kowshik24/bangla-sentence-transformer-ft-matryoshka-distiluse-base-multilingual-cased-v1" target="_blank" rel="noopener">Model (DistilUSE-FT)</a></span>
                                     <span class="artifact-pill artifact-available"><a href="assets/img/bangla_embedding_architecture.png" target="_blank" rel="noopener">Figure</a></span>
                                     <span class="artifact-pill artifact-unavailable">Paper PDF: Coming soon</span>
                                 </div>
@@ -524,7 +526,7 @@
                                 <p class="publication-meta-standard mb-3">
                                     <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · Mathematical Biosciences · 2025 · Status: Under Review
                                 </p>
-                                <details class="abstract-details mb-3" open>
+                                <details class="abstract-details mb-3">
                                     <summary>Abstract</summary>
                                     <p class="card-text text-muted mb-0">Predictive mathematical models of biological processes like wound healing are essential for quantitative understanding, but their clinical utility is often limited by a critical roadblock: uncertainty in their biophysical parameters. These parameters are difficult to measure directly and must be inferred from sparse, noisy data. This paper presents a Bayesian Physics-Informed Neural Network (BPINN) framework to address this challenge by performing robust parameter inference and principled uncertainty quantification. We frame the identification of unknown parameters in a coupled reaction-diffusion system for wound healing as a Bayesian inverse problem. By integrating sparse observational data with the governing physical laws within a variational inference framework, the BPINN learns the full posterior distributions of unknown model parameters. Our results show that the framework accurately infers key reaction parameters from a dataset comprising less than 0.01% of the full spatio-temporal domain. More importantly, the BPINN correctly diagnoses that the cell motility parameter is practically non-identifiable from the sparse data, a conclusion supported by the large posterior uncertainty it assigns. The model’s predictive uncertainty is well-calibrated, being highest in regions far from observations. This work establishes the dual value of BPINNs as a powerful computational tool: both for developing reliable, personalized biomechanical models through data-driven calibration, and for diagnosing parameter identifiability issues—a critical step towards building trustworthy models in computational medicine and systems biology.</p>
                                 </details>
@@ -595,10 +597,10 @@
                                         </p>
 
                                         <div class="abstract-section mb-3">
-                                            <button class="btn btn-sm btn-outline-secondary abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-conf-bigdata26" aria-expanded="true">
-                                                <i class="bi bi-chevron-up me-1"></i>Hide Abstract
+                                            <button class="btn btn-sm btn-outline-secondary abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-conf-bigdata26" aria-expanded="false">
+                                                <i class="bi bi-chevron-down me-1"></i>View Abstract
                                             </button>
-                                            <div class="collapse show mt-2" id="abstract-conf-bigdata26">
+                                            <div class="collapse mt-2" id="abstract-conf-bigdata26">
                                                 <div class="abstract-content p-3 bg-light rounded">
                                                     <p class="text-muted small mb-0">
                                                         <strong>Abstract:</strong> Machine learning models are widely used to predict equipment failures in industrial systems, but accurate predictions do not guarantee that models rely on features consistent with physical failure mechanisms. Although explainable artificial intelligence methods identify influential features, whether these explanations align with documented failure mechanisms is rarely tested statistically. To address this gap, we propose a mechanism-level statistical audit that evaluates whether feature attributions concentrate on mechanism-relevant features, distinguish among failure mechanisms, and reveal potentially misleading feature reliance. Three complementary statistics are evaluated against reference distributions generated by retraining models on shuffled labels. Experiments on the AI4I 2020 benchmark show evidence of attribution alignment for three of four documented failure mechanisms with engineered features, two of which remain aligned in every prespecified input and attribution configuration. Additional evaluations on laboratory bearing recordings and simulated industrial process data demonstrate the applicability of the framework across different settings. Controlled shortcut experiments show that models can maintain high predictive performance while relying on misleading features. A grouped statistic detects shortcuts spread over a few features, although weaker shortcuts may not be detected. Audit conclusions are also sensitive to the choice of explanation method and reference distribution. Overall, the proposed framework enables systematic statistical evaluation of explanation–mechanism alignment, while recognizing that attribution agreement does not establish physical correctness.
@@ -689,10 +691,10 @@
                                         </p>
                                         
                                         <div class="abstract-section mb-3">
-                                            <button class="btn btn-sm btn-outline-secondary abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-conf-1" aria-expanded="true">
-                                                <i class="bi bi-chevron-up me-1"></i>Hide Abstract
+                                            <button class="btn btn-sm btn-outline-secondary abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-conf-1" aria-expanded="false">
+                                                <i class="bi bi-chevron-down me-1"></i>View Abstract
                                             </button>
-                                            <div class="collapse show mt-2" id="abstract-conf-1">
+                                            <div class="collapse mt-2" id="abstract-conf-1">
                                                 <div class="abstract-content p-3 bg-light rounded">
                                                     <p class="text-muted small mb-0">
                                                         <strong>Abstract:</strong> Knee injuries, prevalent in athletic and aging populations, pose significant challenges to healthcare professionals due to their complex nature and the critical function of the knee joint. Early and accurate diagnosis is paramount to ensure effective treatment and minimize long-term complications. Traditional diagnostic methods, including physical examinations and imaging techniques like MRI, require expert interpretation and can sometimes be inconclusive. This study introduces an approach to knee injury classification using deep learning techniques by leveraging convolutional neural networks (CNNs) with Attention Mechanism. This research work integrates powerful feature extraction capabilities of CNN and feature refinement of attention mechanism for the binary and multi-class classification of knee MRI images, with the aim of accurately identifying specific knee injury types. Based on our experiment on two comprehensive knee MRI datasets, our custom CNN model achieved 88% testing accuracy on Dataset-1 (Binary classification) and 77% accuracy on Dataset-2 (Multi-class classification). Meanwhile, the Attention-based CNN model achieved 100% accuracy on Dataset-1 (Binary Classification) and 91% accuracy on Dataset-2 (Multi-Class Classification). This approach not only holds promise for enhancing diagnostic accuracy but also for reducing the time to diagnosis.
@@ -754,8 +756,8 @@
                                 <div class="row">
                                     <!-- Left side - Image -->
                                     <div class="col-md-4 text-center mb-3 mb-md-0">
-                                        <img src="assets/img/bangla-llama.jpg" alt="Bangla-LLama Architecture" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
-                                        <img src="assets/img/Transformer.jpg" alt="Transformer Architecture" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                        <img src="assets/img/bangla-llama.jpg" alt="Bangla-LLama Architecture" class="img-fluid rounded shadow publication-image">
+                                        <img src="assets/img/Transformer.jpg" alt="Transformer Architecture" class="img-fluid rounded shadow publication-image">
                         
                                     </div>
                                     <!-- Right side - Details -->
@@ -768,7 +770,10 @@
                                         <p class="publication-meta-standard mb-3">
                                             <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · IEEE ECCE · 2025 · Status: Published
                                         </p>
-                                        <p class="card-text text-muted mb-3">Abstract—Natural language processing (NLP) has witnessed significant advancements in recent years, particularly in improving question-answering (QA) systems for well-resourced languages such as English. However, the development of such systems for low-resource languages, including Bengali, remains insufficiently explored. This study proposes an approach to developing a Bengali QA system utilizing the Llama-3.2-3B-Instruct model, leveraging transfer learning techniques on a synthetic dataset derived from the SQuAD 2.0 benchmark. The experiments achieved an F1 score of 42.77%, marking a 4.02% improvement over the previous best performance of multilingual BERT (mBERT) variants. These results establish a benchmark against human responses and underscore the potential of transfer learning in advancing QA capabilities for Bengali and similar low-resource languages.</p>
+                                        <details class="abstract-details mb-3">
+                                            <summary>Abstract</summary>
+                                            <p class="card-text text-muted mb-0">Natural language processing (NLP) has witnessed significant advancements in recent years, particularly in improving question-answering (QA) systems for well-resourced languages such as English. However, the development of such systems for low-resource languages, including Bengali, remains insufficiently explored. This study proposes an approach to developing a Bengali QA system utilizing the Llama-3.2-3B-Instruct model, leveraging transfer learning techniques on a synthetic dataset derived from the SQuAD 2.0 benchmark. The experiments achieved an F1 score of 42.77%, marking a 4.02% improvement over the previous best performance of multilingual BERT (mBERT) variants. These results establish a benchmark against human responses and underscore the potential of transfer learning in advancing QA capabilities for Bengali and similar low-resource languages.</p>
+                                        </details>
                                         
                                         <div class="d-flex flex-wrap gap-1 mb-3">
                                             <span class="badge bg-light text-dark">NLP</span>
@@ -853,8 +858,8 @@
                                 <div class="row">
                                     <!-- Left side - Image -->
                                     <div class="col-md-4 text-center mb-3 mb-md-0">
-                                        <img src="assets/img/Bengali_word_cloud.png" alt="Bengali Word Cloud" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
-                                        <img src="assets/img/Formal-Collocial-CM.png" alt="Confusion Matrix" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                        <img src="assets/img/Bengali_word_cloud.png" alt="Bengali Word Cloud" class="img-fluid rounded shadow publication-image">
+                                        <img src="assets/img/Formal-Collocial-CM.png" alt="Confusion Matrix" class="img-fluid rounded shadow publication-image">
                                     </div>
                                     <!-- Right side - Details -->
                                     <div class="col-md-8">
@@ -866,7 +871,10 @@
                                         <p class="publication-meta-standard mb-3">
                                             S. Aich, <strong>K. Debanath</strong>, and A.Y. Srizon · IEEE ECCE · 2025 · Status: Published
                                         </p>
-                                        <p class="card-text text-muted mb-3">Abstract—The Bengali language, rich in history and cultural significance, poses unique challenges in Natural Language Processing (NLP) due to its dual-register structure: Sadhu (formal) and Cholit (colloquial). These registers differ significantly in syntax, vocabulary, and usage, complicating tasks such as text classification, translation, and sentiment analysis. Language models not specifically trained to recognize these distinctions often misinterpret these variations, limiting the accuracy of Bengali NLP tools. To address this, a dataset from Mendeley was used to fine-tune the multilingual BERT (mBERT) model for distinguishing between Sadhu and Cholit registers. The fine-tuned model achieved an accuracy of 94.08%, effectively capturing the subtle lexical and syntactic differences between the two forms. This work advances Bengali NLP, enabling more precise applications in digital communication, automated translation, and linguistic analysis, while contributing to broader advancements in low-resource language processing.</p>
+                                        <details class="abstract-details mb-3">
+                                            <summary>Abstract</summary>
+                                            <p class="card-text text-muted mb-0">The Bengali language, rich in history and cultural significance, poses unique challenges in Natural Language Processing (NLP) due to its dual-register structure: Sadhu (formal) and Cholit (colloquial). These registers differ significantly in syntax, vocabulary, and usage, complicating tasks such as text classification, translation, and sentiment analysis. Language models not specifically trained to recognize these distinctions often misinterpret these variations, limiting the accuracy of Bengali NLP tools. To address this, a dataset from Mendeley was used to fine-tune the multilingual BERT (mBERT) model for distinguishing between Sadhu and Cholit registers. The fine-tuned model achieved an accuracy of 94.08%, effectively capturing the subtle lexical and syntactic differences between the two forms. This work advances Bengali NLP, enabling more precise applications in digital communication, automated translation, and linguistic analysis, while contributing to broader advancements in low-resource language processing.</p>
+                                        </details>
                                         
                                         <div class="d-flex flex-wrap gap-1 mb-3">
                                             <span class="badge bg-light text-dark">Multilingual BERT</span>
@@ -933,7 +941,7 @@
                                 <div class="row">
                                     <!-- Left side - Image -->
                                     <div class="col-md-4 text-center mb-3 mb-md-0">
-                                        <img src="assets/img/party_engagement.png" alt="Bot Activity Analysis" class="img-fluid rounded shadow" style="max-height: 250px; object-fit: cover;">
+                                        <img src="assets/img/party_engagement.png" alt="Bot Activity Analysis" class="img-fluid rounded shadow publication-image">
                                     </div>
                                     <!-- Right side - Details -->
                                     <div class="col-md-8">
@@ -945,7 +953,10 @@
                                         <p class="publication-meta-standard mb-3">
                                             <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · IEEE NCIM · 2025 · Status: Published
                                         </p>
-                                        <p class="card-text text-muted mb-3">Abstract—Social media has become a battleground for political discourse, with automated accounts (bots) playing a growing role in shaping public opinion and engagement. In the context of the 2024 U.S. Presidential Election, understanding bot activity is crucial for identifying potential misinformation and manipulation tactics. This study analyzes 50,191 tweets collected between May and July 2023 to assess bot prevalence and influence. Bot detection is conducted using Botometer API scores and a Random Forest Regressor (MSE: 0.0071, R2: 0.779), facilitating a multi-threshold analysis. Findings indicate a low overall bot presence (2.22% at a 0.7 threshold) but significant variations across political affiliations. While human-generated content dominates with a 15:1 engagement ratio, bots are most effective in cross-party discussions (engagement ratio: 0.145), whereas Democratic-focused bots exhibit the lowest engagement success. To deepen insights into election-related influence operations, a novel party-affiliation analysis framework is introduced, shedding light on platform-specific manipulation strategies and their implications for political discourse.</p>
+                                        <details class="abstract-details mb-3">
+                                            <summary>Abstract</summary>
+                                            <p class="card-text text-muted mb-0">Social media has become a battleground for political discourse, with automated accounts (bots) playing a growing role in shaping public opinion and engagement. In the context of the 2024 U.S. Presidential Election, understanding bot activity is crucial for identifying potential misinformation and manipulation tactics. This study analyzes 50,191 tweets collected between May and July 2023 to assess bot prevalence and influence. Bot detection is conducted using Botometer API scores and a Random Forest Regressor (MSE: 0.0071, R2: 0.779), facilitating a multi-threshold analysis. Findings indicate a low overall bot presence (2.22% at a 0.7 threshold) but significant variations across political affiliations. While human-generated content dominates with a 15:1 engagement ratio, bots are most effective in cross-party discussions (engagement ratio: 0.145), whereas Democratic-focused bots exhibit the lowest engagement success. To deepen insights into election-related influence operations, a novel party-affiliation analysis framework is introduced, shedding light on platform-specific manipulation strategies and their implications for political discourse.</p>
+                                        </details>
                                         
                                         <div class="d-flex flex-wrap gap-1 mb-3">
                                             <span class="badge bg-light text-dark">Social Media Analysis</span>
@@ -1015,7 +1026,7 @@
                                 <p class="publication-meta-standard mb-3">
                                     S. Aich, <strong>K. Debanath</strong>, and A.Y. Srizon · IEEE NCIM · 2025 · Status: Published
                                 </p>
-                                <details class="abstract-details mb-3" open>
+                                <details class="abstract-details mb-3">
                                     <summary>Abstract</summary>
                                     <p class="card-text text-muted mb-0">Enhancing interpretability without compromising accuracy is a critical challenge in text classification. This research explores the integration of Explainable Artificial Intelligence (XAI) techniques with advanced machine learning models, utilizing the Local Interpretable Model-Agnostic Explanations (LIME) framework to provide transparency. A fine-tuned BERT model achieved state-of-the-art performance, surpassing Random Forest and Sentence Embedding-based models with a perfect 100% accuracy (ROC-AUC score of 1.00). While Random Forest classifiers offered a solid baseline, they struggled with semantic nuances, underscoring the need for embedding-based approaches. The study highlights the inherent trade-off between interpretability and accuracy, demonstrating that while transformer-based models like BERT excel at capturing complex linguistic patterns, their black-box nature necessitates tools like LIME for explainability. By bridging this gap, the research contributes to the development of more transparent, reliable, and high-performing AI systems.</p>
                                 </details>
@@ -1104,8 +1115,8 @@
                                         <div class="row">
                                             <!-- Left side - Images -->
                                             <div class="col-md-4 text-center mb-3 mb-md-0">
-                                                <img src="assets/img/figure_architecture.png" alt="Physics-Informed Neural Network Architecture" class="img-fluid rounded shadow mb-3" style="max-height: 200px; object-fit: cover;">
-                                                <img src="assets/img/figure_performance.png" alt="Model Performance Results" class="img-fluid rounded shadow" style="max-height: 200px; object-fit: cover;">
+                                                <img src="assets/img/figure_architecture.png" alt="Physics-Informed Neural Network Architecture" class="img-fluid rounded shadow publication-image">
+                                                <img src="assets/img/figure_performance.png" alt="Model Performance Results" class="img-fluid rounded shadow publication-image">
                                             </div>
                                             <!-- Right side - Details -->
                                             <div class="col-md-8">
@@ -1117,7 +1128,7 @@
                                                 <p class="publication-meta-standard mb-3">
                                                     <strong>K. Debanath</strong>, S. Aich, and A.Y. Srizon · Proceedings of the 3rd International Conference on Big Data, IoT and Machine Learning (BIM 2025), Lecture Notes in Networks and Systems, vol. 1798, pp. 447–457 · 2026 · Status: Published
                                                 </p>
-                                                <details class="abstract-details mb-3" open>
+                                                <details class="abstract-details mb-3">
                                                     <summary>Abstract</summary>
                                                     <p class="card-text text-muted mb-0">The stability of modern power grids is increasingly challenged by dynamic disturbances, while conventional data-driven models often require extensive labeled fault data and offer limited interpretability. This work proposes a Physics-Informed Neural Network (PINN) framework for real-time anomaly detection by embedding the swing equation directly into the model loss. To address oscillatory training instability, the method integrates Fourier Feature Mapping with loss weight annealing. Trained only on sparse normal-operation data, the model reconstructs system states accurately and uses the physics residual as an interpretable anomaly signal. Experiments on a Single-Machine Infinite Bus system show instantaneous and precise fault detection, with clearer and more interpretable signals than an LSTM baseline.</p>
                                                 </details>
