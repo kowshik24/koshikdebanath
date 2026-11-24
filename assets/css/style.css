@@ -5253,22 +5253,28 @@ section.py-5 {
     }
 }
 
-/* Publication cards: horizontal layout with a figure panel that fills the left side */
+/* Publication cards: full-width section, compact figure column */
+#publications > .container {
+    max-width: min(1500px, 94vw);
+}
+
 @media (min-width: 768px) {
     #publications .card-body > .row {
-        align-items: stretch;
+        align-items: center;
     }
 
     #publications .card-body > .row > [class*="col-md-"]:has(.publication-image) {
         flex: 0 0 auto;
-        width: 40%;
+        width: 32%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 0.75rem;
+        gap: 0.6rem;
         margin-bottom: 0 !important;
-        padding: 1.25rem;
-        background: linear-gradient(160deg, #f4efe4 0%, #ebe4d4 100%);
+        align-self: center;
+        padding: 0.75rem;
+        background: #fff;
+        border: 1px solid #e6dfd0;
         border-radius: 14px;
     }
 
@@ -5281,9 +5287,9 @@ section.py-5 {
     #publications .publication-image {
         max-height: 340px !important;
         object-fit: contain;
-        background: #fff;
-        padding: 0.5rem;
-        box-shadow: 0 6px 18px rgba(60, 45, 20, 0.08) !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 0;
     }
 
     #publications .publication-image:hover {
