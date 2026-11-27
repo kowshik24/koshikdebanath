@@ -196,6 +196,63 @@ Constructed an Artificial Neural Network with PyTorch to predict patient diabete
 
 ## Research Software, Tools & Demos
 
+### **SynthDetect Ultra: AI Image Forensics**
+
+Advanced forensic tool to distinguish authentic photographs from AI-generated images (GANs, Diffusion). Uses explainable, physics-inspired and statistical features to detect synthetic "fingerprints" invisible to the naked eye.
+
+- Physics & Optics: Chromatic Aberration, CFA correlation
+- Frequency Domain: Spectral Slope, High-Frequency Ratios
+- Statistical: Benford's Law, Noise Residual Kurtosis
+- Pixel-Level: Error Level Analysis, Gradient Field anisotropy
+- Explainable radar charts & heatmaps
+- **Tech Stack:** Python, Streamlit
+- **Links:** [Live Demo](https://gradient-field-detector.streamlit.app/) | [Demo Video](https://youtu.be/zwNUQgbRae4)
+
+### **Interactive Convolution Visualizer**
+
+An interactive web-based tool to visualize and understand convolution operations in deep learning and image processing.
+
+- Interactive convolution visualization
+- Real-time parameter adjustment
+- Animated processing steps
+- Educational tooltips
+- **Tech Stack:** JavaScript
+- **Links:** [Live Demo](https://kowshik24.github.io/convolution-visualizer/) | [GitHub](https://github.com/kowshik24/convolution-visualizer)
+
+### **Attention Visualization Tool**
+
+Interactive tool to visualize attention mechanisms between sentences using various attention types and vector similarity measures.
+
+- Sentence-level attention heatmaps
+- Multiple attention types (Cosine, Dot Product)
+- Interactive matrix exploration
+- Automated insights & analysis
+- **Tech Stack:** JavaScript
+- **Links:** [Live Demo](https://kowshik24.github.io/attention-visualization/) | [GitHub](https://github.com/kowshik24/attention-visualization)
+
+### **Obsidian AI Assistant Plugin**
+
+A TypeScript-based Obsidian community plugin integrating OpenAI APIs for context-aware assistance with multi-file context, history, and streaming responses.
+
+- Multi-file context and conversation memory
+- Real-time streaming responses
+- Robust error handling and keyboard shortcuts
+- Modular OpenAI service architecture
+- **Tech Stack:** TypeScript, Obsidian, OpenAI
+- **Links:** [Demo Video](https://youtu.be/_sQmsy0-68w) | [GitHub](https://github.com/kowshik24/obsidian-ai-assistant)
+
+### **PixelContext**
+
+Capture UI context from any webpage and export production-quality, AI-ready Markdown prompts. Built for engineers, designers, and product teams who need fast, structured UI feedback.
+
+- Capture package: note, selector, HTML, CSS, computed styles, screenshot ref ID
+- Ctrl/Cmd + Shift + X capture toggle + quick composer workflow
+- Persistent per-page history, re-highlight, edit notes, delete captures
+- One-click Markdown export to clipboard for AI tools and issue trackers
+- Fully client-side: no backend and no API key required
+- **Tech Stack:** Chrome Extension
+- **Links:** [Demo GIF](assets/img/PromptCapture.gif) | [GitHub](https://github.com/kowshik24/pixelcontext)
+
 ### **FreeRec**
 
 A free, private screen and camera recorder for Google Chrome. Records the screen, a window or a tab with a camera bubble, background effects and filters, presents on a built-in canvas, or takes screenshots. Everything is saved straight to a local folder: no account, no subscription, no upload.
