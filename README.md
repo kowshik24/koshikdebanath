@@ -84,7 +84,7 @@ Conducting doctoral research in artificial intelligence and machine learning, wi
 
 ### **Software Engineer I** - Universal Machine Inc. (Sunnyvale, CA, USA - Remote)
 
-*April 2025 - Present*
+*April 2025 - August 2026*
 
 - **YouTube Live Stream Bot**: Developed Chrome Extension automating YouTube Live chat using JavaScript, Chrome APIs, and async requests. Integrated YouTube & OpenAI APIs for real-time chat fetching/posting and AI response generation. Engineered AI features managing conversational history and prompt engineering for context/recall. Implemented secure Google OAuth and robust error handling for external APIs.
 - **cBORG DAO Governance Platform**: Built full-stack decentralized governance platform using React/Next.js, FastAPI, PostgreSQL, and Ethereum smart contracts for community proposal voting and treasury management. Integrated OpenAI GPT-4o to automatically parse natural language chat messages into structured trading proposals with confidence scoring and real-time voting. Implemented SIWE wallet linking with nonce-based authentication, JWT tokens, and privacy-preserving user identity management.
