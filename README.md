@@ -194,6 +194,20 @@ Constructed an Artificial Neural Network with PyTorch to predict patient diabete
 - **Tech Stack:** PyTorch, Flask, Gunicorn, Pandas
 - **Links:** [GitHub](https://github.com/kowshik24/Diabetes-Prediction-Pytorch-ANN)
 
+## Research Software, Tools & Demos
+
+### **FreeRec**
+
+A free, private screen and camera recorder for Google Chrome. Records the screen, a window or a tab with a camera bubble, background effects and filters, presents on a built-in canvas, or takes screenshots. Everything is saved straight to a local folder: no account, no subscription, no upload.
+
+- Four capture modes: Full Screen, Window, Current tab (no picker), Camera only
+- Draggable camera bubble with on-device background blur, virtual backgrounds and 10 filters (MediaPipe Selfie Segmenter)
+- Built-in canvas with text layouts and 6 presentation templates
+- Streams recordings to disk; seekable WebM (VP9/Opus) or MP4 (H.264)
+- Fully offline: no network requests, no analytics, no build step
+- **Tech Stack:** JavaScript (ES modules), Chrome Extension Manifest V3, MediaRecorder, File System Access API, MediaPipe
+- **Links:** [Website](https://kowshik24.github.io/freerec/) | [Demo Video](https://kowshik24.github.io/freerec/freerec-demo.mp4) | [GitHub](https://github.com/kowshik24/freerec)
+
 ## Research Competitions & Achievements
 
 - **Hackathon Champion at Machine Hack** (Global Ranking: 539 out of 8,861)
