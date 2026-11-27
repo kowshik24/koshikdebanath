@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-labelledby="t">
+  <title id="t">A drafting lever gently nudging a cluster of paper circles along a dotted arc</title>
+  <defs>
+    <!-- paper grain -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="41" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.08  0 0 0 0 0.08  0 0 0 0 0.07  0 0 0 0.05 0"/>
+    </filter>
+    <!-- hand-drawn ink wobble -->
+    <filter id="ink" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="44" result="w"/>
+      <feDisplacementMap in="SourceGraphic" in2="w" scale="2.6" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- torn / hand-cut paper edge -->
+    <filter id="torn" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.18" numOctaves="3" seed="48" result="t"/>
+      <feDisplacementMap in="SourceGraphic" in2="t" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- soft charcoal shadow -->
+    <filter id="soot" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2"/>
+    </filter>
+    <!-- graphite crosshatch -->
+    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#141413" stroke-width="0.7" opacity="0.55"/>
+    </pattern>
+    <pattern id="crosshatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#141413" stroke-width="0.6" opacity="0.5"/>
+      <line x1="0" y1="0" x2="6" y2="0" stroke="#141413" stroke-width="0.6" opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#FAF9F5"/>
+  <path d="M100.9,380.5 C101.8,378.6 104.6,372.9 106.5,369.1 C108.4,365.4 110.4,361.7 112.5,358.0 C114.6,354.3 116.7,350.6 119.0,347.0 C121.2,343.4 123.5,339.9 125.8,336.4 C128.2,332.8 130.6,329.4 133.1,326.0 C135.6,322.5 138.1,319.2 140.7,315.8 C143.4,312.5 146.0,309.2 148.8,306.0 C151.5,302.8 154.3,299.6 157.2,296.5 C160.1,293.4 163.0,290.3 166.0,287.3 C168.9,284.3 172.0,281.4 175.1,278.5 C178.2,275.6 181.3,272.8 184.5,270.1 C187.7,267.3 191.0,264.6 194.3,262.0 C197.6,259.3 201.0,256.7 204.4,254.2 C207.8,251.7 211.2,249.3 214.7,246.9 C218.2,244.5 221.8,242.2 225.4,240.0 C229.0,237.8 232.6,235.6 236.3,233.5 C239.9,231.4 243.7,229.4 247.4,227.4 C251.2,225.4 254.9,223.6 258.8,221.7 C262.6,219.9 266.5,218.2 270.3,216.5 C274.2,214.9 278.2,213.3 282.1,211.8 C286.1,210.3 290.0,208.8 294.0,207.5 C298.0,206.1 302.1,204.8 306.1,203.6 C310.2,202.4 314.3,201.3 318.4,200.3 C322.5,199.2 326.6,198.2 330.7,197.4 C334.9,196.5 339.0,195.7 343.2,194.9 C347.3,194.2 351.5,193.6 355.7,193.0 C359.9,192.4 364.1,191.9 368.3,191.5 C372.5,191.1 376.8,190.8 381.0,190.5 C385.2,190.3 389.4,190.1 393.7,190.1 C397.9,190.0 402.1,190.0 406.3,190.1 C410.6,190.1 414.8,190.3 419.0,190.5 C423.2,190.8 427.5,191.1 431.7,191.5 C435.9,191.9 440.1,192.4 444.3,193.0 C448.5,193.6 452.7,194.2 456.8,194.9 C461.0,195.7 465.1,196.5 469.3,197.4 C473.4,198.2 477.5,199.2 481.6,200.3 C485.7,201.3 489.8,202.4 493.9,203.6 C497.9,204.8 502.0,206.1 506.0,207.5 C510.0,208.8 513.9,210.3 517.9,211.8 C521.8,213.3 525.8,214.9 529.7,216.5 C533.5,218.2 537.4,219.9 541.2,221.7 C545.1,223.6 548.8,225.4 552.6,227.4 C556.3,229.4 560.1,231.4 563.7,233.5 C567.4,235.6 571.0,237.8 574.6,240.0 C578.2,242.2 581.8,244.5 585.3,246.9 C588.8,249.3 592.2,251.7 595.6,254.2 C599.0,256.7 602.4,259.3 605.7,262.0 C609.0,264.6 612.3,267.3 615.5,270.1 C618.7,272.8 621.8,275.6 624.9,278.5 C628.0,281.4 631.1,284.3 634.0,287.3 C637.0,290.3 639.9,293.4 642.8,296.5 C645.7,299.6 648.5,302.8 651.2,306.0 C654.0,309.2 656.6,312.5 659.3,315.8 C661.9,319.2 664.4,322.5 666.9,326.0 C669.4,329.4 671.8,332.8 674.2,336.4 C676.5,339.9 678.8,343.4 681.0,347.0 C683.3,350.6 685.4,354.3 687.5,358.0 C689.6,361.7 691.6,365.4 693.5,369.1 C695.4,372.9 698.2,378.6 699.1,380.5" fill="none" stroke="#87867F" stroke-width="1.6" stroke-dasharray="1.5 9" stroke-linecap="round" filter="url(#ink)"/>
+  <g filter="url(#torn)">
+    <circle cx="410.4" cy="196.6" r="10.2" fill="#D97757" stroke="#141413" stroke-width="1"/>
+    <circle cx="426.1" cy="189.2" r="13.8" fill="#E3DACC" stroke="#141413" stroke-width="1"/>
+    <circle cx="433.5" cy="186.1" r="13.0" fill="#FAF9F5" stroke="#141413" stroke-width="1"/>
+    <circle cx="447.4" cy="185.2" r="12.1" fill="#FAF9F5" stroke="#141413" stroke-width="1"/>
+    <circle cx="462.0" cy="184.2" r="11.2" fill="#D97757" stroke="#141413" stroke-width="1"/>
+    <circle cx="466.2" cy="192.0" r="13.1" fill="#FAF9F5" stroke="#141413" stroke-width="1"/>
+    <circle cx="477.6" cy="210.8" r="15.1" fill="#FAF9F5" stroke="#141413" stroke-width="1"/>
+    <circle cx="484.8" cy="204.6" r="12.3" fill="#C6613F" stroke="#141413" stroke-width="1"/>
+    <circle cx="496.6" cy="216.6" r="9.7" fill="#FAF9F5" stroke="#141413" stroke-width="1"/>
+  </g>
+  <g filter="url(#ink)">
+    <polygon points="230,332 212,366 248,366" fill="#E3DACC" stroke="#141413" stroke-width="1.3"/>
+    <polygon points="230,342 219,366 241,366" fill="url(#hatch)"/>
+    <line x1="170" y1="367" x2="290" y2="367" stroke="#141413" stroke-width="1.2"/>
+    <line x1="138.6" y1="401.2" x2="396.2" y2="200.6" stroke="#141413" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="230" cy="330" r="3.5" fill="#FAF9F5" stroke="#141413" stroke-width="1.3"/>
+    <circle cx="138.6" cy="401.2" r="7" fill="#C6613F" stroke="#141413" stroke-width="1.2"/>
+  </g>
+  <g stroke="#D97757" stroke-width="1.4" stroke-linecap="round" filter="url(#ink)">
+    <line x1="366.2" y1="186.6" x2="382.2" y2="184.6"/>
+    <line x1="366.2" y1="195.6" x2="382.2" y2="193.6"/>
+    <line x1="366.2" y1="204.6" x2="382.2" y2="202.6"/>
+  </g>
+  <rect width="800" height="500" filter="url(#grain)"/>
+</svg>
